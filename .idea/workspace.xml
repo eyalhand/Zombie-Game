@@ -1,0 +1,2128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b516f943-37ca-4aee-b8b3-93206aa6ecef" name="Default Changelist" comment="FIRST UPLOAD">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zombie Game.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/OpenAL32.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/OpenAL64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/Stick Adventures.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jars/jinput.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jars/jogg-0.0.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jars/jorbis-0.0.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jars/lwjgl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jars/slick.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jinput-dx8.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jinput-dx8_64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jinput-raw.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jinput-raw_64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/allclasses-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/allclasses-noframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/constant-values.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/deprecated-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/index-all.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/BufferChecks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/BufferUtils.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/LWJGLException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/LWJGLUtil.TokenFilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/LWJGLUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/MemoryUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/NondirectBufferWrapper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/PointerBuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/PointerWrapper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/PointerWrapperAbstract.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/Sys.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/class-use/BufferChecks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/class-use/BufferUtils.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/class-use/LWJGLException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/class-use/LWJGLUtil.TokenFilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/class-use/LWJGLUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/class-use/MemoryUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/class-use/NondirectBufferWrapper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/class-use/PointerBuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/class-use/PointerWrapper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/class-use/PointerWrapperAbstract.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/class-use/Sys.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/input/Controller.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/input/Controllers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/input/Cursor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/input/Keyboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/input/Mouse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/input/class-use/Controller.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/input/class-use/Controllers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/input/class-use/Cursor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/input/class-use/Keyboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/input/class-use/Mouse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/input/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/input/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/input/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/input/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/AL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/AL10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/AL11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/ALC10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/ALC11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/ALCcontext.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/ALCdevice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/EFX10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/EFXUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/OpenALException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/Util.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/class-use/AL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/class-use/AL10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/class-use/AL11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/class-use/ALC10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/class-use/ALC11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/class-use/ALCcontext.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/class-use/ALCdevice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/class-use/EFX10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/class-use/EFXUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/class-use/OpenALException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/class-use/Util.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/openal/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/AMDDeviceAttributeQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/AMDDeviceMemoryFlags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/AMDOfflineDevices.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/APPLEContextLoggingUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/APPLEGLSharing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/APPLESetMemObjectDestructor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CL10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CL10GL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CL11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CL12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CL12GL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLBuildProgramCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLCapabilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLCommandQueue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLCompileProgramCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLContext.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLContextCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLDevice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLDeviceCapabilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLEventCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLKernel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLLinkProgramCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLMem.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLMemObjectDestructorCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLNativeKernel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLPlatform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLPlatformCapabilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLPrintfCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLProgram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/CLSampler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/EXTAtomicCounters32.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/EXTAtomicCounters64.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/EXTDeviceFission.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/EXTMigrateMemobject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/INTELImmediateExecution.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/INTELThreadLocalExec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/KHRFp16.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/KHRFp64.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/KHRGLEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/KHRGLSharing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/KHRICD.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/NVDeviceAttributeQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/OpenCLException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/Util.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/api/CLBufferRegion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/api/CLImageFormat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/api/Filter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/api/class-use/CLBufferRegion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/api/class-use/CLImageFormat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/api/class-use/Filter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/api/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/api/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/api/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/api/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/AMDDeviceAttributeQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/AMDDeviceMemoryFlags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/AMDOfflineDevices.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/APPLEContextLoggingUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/APPLEGLSharing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/APPLESetMemObjectDestructor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CL10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CL10GL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CL11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CL12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CL12GL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLBuildProgramCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLCapabilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLCommandQueue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLCompileProgramCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLContext.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLContextCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLDevice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLDeviceCapabilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLEventCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLKernel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLLinkProgramCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLMem.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLMemObjectDestructorCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLNativeKernel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLPlatform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLPlatformCapabilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLPrintfCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLProgram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/CLSampler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/EXTAtomicCounters32.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/EXTAtomicCounters64.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/EXTDeviceFission.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/EXTMigrateMemobject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/INTELImmediateExecution.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/INTELThreadLocalExec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/KHRFp16.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/KHRFp64.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/KHRGLEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/KHRGLSharing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/KHRICD.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/NVDeviceAttributeQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/OpenCLException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/class-use/Util.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opencl/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/AMDBlendMinmaxFactor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/AMDDebugOutput.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/AMDDebugOutputCallback.Handler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/AMDDebugOutputCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/AMDDepthClampSeparate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/AMDDrawBuffersBlend.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/AMDMultiDrawIndirect.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/AMDNameGenDelete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/AMDPerformanceMonitor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/AMDPinnedMemory.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/AMDSamplePositions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/AMDSeamlessCubemapPerTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/AMDStencilOperationExtended.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/AMDVertexShaderTessellator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/APPLEAuxDepthStencil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/APPLEClientStorage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/APPLEElementArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/APPLEFence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/APPLEFloatPixels.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/APPLEFlushBufferRange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/APPLEObjectPurgeable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/APPLEPackedPixels.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/APPLERgb422.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/APPLERowBytes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/APPLETextureRange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/APPLEVertexArrayObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/APPLEVertexArrayRange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/APPLEVertexProgramEvaluators.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/APPLEYcbcr422.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBBaseInstance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBBlendFuncExtended.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBCLEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBColorBufferFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBCompressedTexturePixelStorage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBCopyBuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBDebugOutput.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBDebugOutputCallback.Handler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBDebugOutputCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBDepthBufferFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBDepthClamp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBDepthTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBDrawBuffers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBDrawBuffersBlend.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBDrawElementsBaseVertex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBDrawIndirect.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBDrawInstanced.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBES2Compatibility.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBFragmentProgram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBFragmentShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBFramebufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBFramebufferSRGB.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBGeometryShader4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBGetProgramBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBGpuShader5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBGpuShaderFp64.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBHalfFloatPixel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBHalfFloatVertex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBImaging.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBInstancedArrays.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBInternalformatQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBMapBufferAlignment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBMapBufferRange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBMatrixPalette.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBMultisample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBMultitexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBOcclusionQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBOcclusionQuery2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBPixelBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBPointParameters.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBPointSprite.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBProgram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBProvokingVertex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBRobustness.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBSampleShading.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBSamplerObjects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBSeamlessCubeMap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBSeparateShaderObjects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBShaderAtomicCounters.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBShaderImageLoadStore.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBShaderObjects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBShaderSubroutine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBShadingLanguage100.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBShadingLanguageInclude.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBShadow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBShadowAmbient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBSync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTessellationShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureBorderClamp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureCompression.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureCompressionBPTC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureCompressionRGTC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureCubeMap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureCubeMapArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureEnvCombine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureEnvDot3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureGather.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureMirroredRepeat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureMultisample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureRGB10_A2UI.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureRectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureRg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureStorage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTextureSwizzle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTimerQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTransformFeedback2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTransformFeedback3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTransformFeedbackInstanced.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBTransposeMatrix.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBUniformBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBVertexArrayBgra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBVertexArrayObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBVertexAttrib64bit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBVertexBlend.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBVertexBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBVertexProgram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBVertexShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBVertexType2_10_10_10_REV.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBViewportArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ARBWindowPos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATIDrawBuffers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATIElementArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATIEnvmapBumpmap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATIFragmentShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATIMapObjectBuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATIMeminfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATIPnTriangles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATISeparateStencil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATITextFragmentShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATITextureCompression3DC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATITextureEnvCombine3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATITextureFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATITextureMirrorOnce.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATIVertexArrayObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATIVertexAttribArrayObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ATIVertexStreams.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/AWTGLCanvas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ContextAttribs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/ContextCapabilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/Display.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/DisplayMode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/Drawable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTAbgr.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTBgra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTBindableUniform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTBlendColor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTBlendEquationSeparate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTBlendFuncSeparate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTBlendMinmax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTBlendSubtract.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTCgShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTCompiledVertexArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTDepthBoundsTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTDirectStateAccess.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTDrawBuffers2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTDrawInstanced.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTDrawRangeElements.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTFogCoord.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTFramebufferBlit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTFramebufferMultisample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTFramebufferMultisampleBlitScaled.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTFramebufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTFramebufferSRGB.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTGeometryShader4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTGpuProgramParameters.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTGpuShader4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTMultiDrawArrays.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTPackedDepthStencil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTPackedFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTPackedPixels.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTPalettedTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTPixelBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTPointParameters.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTProvokingVertex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTRescaleNormal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTSecondaryColor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTSeparateShaderObjects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTSeparateSpecularColor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTShaderImageLoadStore.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTSharedTexturePalette.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTStencilClearTag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTStencilTwoSide.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTStencilWrap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureCompressionLATC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureCompressionRGTC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureCompressionS3TC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureEnvCombine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureEnvDot3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureFilterAnisotropic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureInteger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureLODBias.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureMirrorClamp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureRectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureSRGB.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureSRGBDecode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureSharedExponent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureSnorm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTextureSwizzle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTimerQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTTransformFeedback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTVertexArrayBgra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTVertexAttrib64bit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTVertexShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/EXTVertexWeighting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GL11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GL12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GL13.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GL14.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GL15.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GL20.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GL21.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GL30.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GL31.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GL32.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GL33.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GL40.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GL41.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GL42.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GLContext.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GLSync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GLUConstants.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/GREMEDYStringMarker.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/HPOcclusionTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/IBMRasterposClip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/InputImplementation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVBindlessTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVConditionalRender.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVCopyDepthToColor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVCopyImage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVDepthBufferFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVDepthClamp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVEvaluators.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVExplicitMultisample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVFence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVFloatBuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVFogDistance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVFragmentProgram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVFragmentProgram2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVFramebufferMultisampleCoverage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVGeometryProgram4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVGpuProgram4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVGpuProgram5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVGpuShader5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVHalfFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVLightMaxExponent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVMultisampleCoverage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVMultisampleFilterHint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVOcclusionQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVPackedDepthStencil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVParameterBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVPathRendering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVPixelDataRange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVPointSprite.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVPresentVideo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVPresentVideoUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVPrimitiveRestart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVProgram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVRegisterCombiners.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVRegisterCombiners2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVShaderBufferLoad.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVShaderBufferStore.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVTessellationProgram5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVTexgenReflection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVTextureBarrier.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVTextureCompressionVTC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVTextureEnvCombine4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVTextureExpandNormal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVTextureMultisample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVTextureRectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVTextureShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVTextureShader2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVTextureShader3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVTransformFeedback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVTransformFeedback2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVVertexArrayRange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVVertexArrayRange2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVVertexAttribInteger64bit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVVertexBufferUnifiedMemory.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVVertexProgram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVVertexProgram2Option.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVVertexProgram3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVVideoCapture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVVideoCaptureUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/NVXGpuMemoryInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/OpenGLException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/Pbuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/PixelFormat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/PixelFormatLWJGL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/RenderTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/SGISGenerateMipmap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/SGISTextureLOD.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/SUNSliceAccum.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/SharedDrawable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/Util.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/XRandR.Screen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/XRandR.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/AMDBlendMinmaxFactor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/AMDDebugOutput.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/AMDDebugOutputCallback.Handler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/AMDDebugOutputCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/AMDDepthClampSeparate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/AMDDrawBuffersBlend.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/AMDMultiDrawIndirect.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/AMDNameGenDelete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/AMDPerformanceMonitor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/AMDPinnedMemory.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/AMDSamplePositions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/AMDSeamlessCubemapPerTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/AMDStencilOperationExtended.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/AMDVertexShaderTessellator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/APPLEAuxDepthStencil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/APPLEClientStorage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/APPLEElementArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/APPLEFence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/APPLEFloatPixels.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/APPLEFlushBufferRange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/APPLEObjectPurgeable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/APPLEPackedPixels.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/APPLERgb422.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/APPLERowBytes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/APPLETextureRange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/APPLEVertexArrayObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/APPLEVertexArrayRange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/APPLEVertexProgramEvaluators.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/APPLEYcbcr422.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBBaseInstance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBBlendFuncExtended.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBCLEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBColorBufferFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBCompressedTexturePixelStorage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBCopyBuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBDebugOutput.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBDebugOutputCallback.Handler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBDebugOutputCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBDepthBufferFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBDepthClamp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBDepthTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBDrawBuffers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBDrawBuffersBlend.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBDrawElementsBaseVertex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBDrawIndirect.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBDrawInstanced.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBES2Compatibility.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBFragmentProgram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBFragmentShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBFramebufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBFramebufferSRGB.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBGeometryShader4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBGetProgramBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBGpuShader5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBGpuShaderFp64.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBHalfFloatPixel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBHalfFloatVertex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBImaging.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBInstancedArrays.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBInternalformatQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBMapBufferAlignment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBMapBufferRange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBMatrixPalette.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBMultisample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBMultitexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBOcclusionQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBOcclusionQuery2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBPixelBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBPointParameters.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBPointSprite.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBProgram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBProvokingVertex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBRobustness.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBSampleShading.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBSamplerObjects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBSeamlessCubeMap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBSeparateShaderObjects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBShaderAtomicCounters.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBShaderImageLoadStore.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBShaderObjects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBShaderSubroutine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBShadingLanguage100.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBShadingLanguageInclude.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBShadow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBShadowAmbient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBSync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTessellationShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureBorderClamp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureCompression.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureCompressionBPTC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureCompressionRGTC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureCubeMap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureCubeMapArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureEnvCombine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureEnvDot3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureGather.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureMirroredRepeat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureMultisample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureRGB10_A2UI.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureRectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureRg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureStorage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTextureSwizzle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTimerQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTransformFeedback2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTransformFeedback3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTransformFeedbackInstanced.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBTransposeMatrix.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBUniformBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBVertexArrayBgra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBVertexArrayObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBVertexAttrib64bit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBVertexBlend.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBVertexBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBVertexProgram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBVertexShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBVertexType2_10_10_10_REV.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBViewportArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ARBWindowPos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATIDrawBuffers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATIElementArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATIEnvmapBumpmap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATIFragmentShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATIMapObjectBuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATIMeminfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATIPnTriangles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATISeparateStencil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATITextFragmentShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATITextureCompression3DC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATITextureEnvCombine3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATITextureFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATITextureMirrorOnce.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATIVertexArrayObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATIVertexAttribArrayObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ATIVertexStreams.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/AWTGLCanvas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ContextAttribs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/ContextCapabilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/Display.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/DisplayMode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/Drawable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTAbgr.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTBgra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTBindableUniform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTBlendColor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTBlendEquationSeparate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTBlendFuncSeparate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTBlendMinmax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTBlendSubtract.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTCgShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTCompiledVertexArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTDepthBoundsTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTDirectStateAccess.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTDrawBuffers2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTDrawInstanced.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTDrawRangeElements.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTFogCoord.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTFramebufferBlit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTFramebufferMultisample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTFramebufferMultisampleBlitScaled.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTFramebufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTFramebufferSRGB.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTGeometryShader4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTGpuProgramParameters.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTGpuShader4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTMultiDrawArrays.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTPackedDepthStencil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTPackedFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTPackedPixels.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTPalettedTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTPixelBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTPointParameters.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTProvokingVertex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTRescaleNormal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTSecondaryColor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTSeparateShaderObjects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTSeparateSpecularColor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTShaderImageLoadStore.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTSharedTexturePalette.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTStencilClearTag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTStencilTwoSide.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTStencilWrap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureCompressionLATC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureCompressionRGTC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureCompressionS3TC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureEnvCombine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureEnvDot3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureFilterAnisotropic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureInteger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureLODBias.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureMirrorClamp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureRectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureSRGB.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureSRGBDecode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureSharedExponent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureSnorm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTextureSwizzle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTimerQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTTransformFeedback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTVertexArrayBgra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTVertexAttrib64bit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTVertexShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/EXTVertexWeighting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GL11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GL12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GL13.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GL14.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GL15.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GL20.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GL21.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GL30.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GL31.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GL32.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GL33.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GL40.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GL41.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GL42.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GLContext.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GLSync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GLUConstants.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/GREMEDYStringMarker.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/HPOcclusionTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/IBMRasterposClip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/InputImplementation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVBindlessTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVConditionalRender.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVCopyDepthToColor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVCopyImage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVDepthBufferFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVDepthClamp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVEvaluators.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVExplicitMultisample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVFence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVFloatBuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVFogDistance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVFragmentProgram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVFragmentProgram2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVFramebufferMultisampleCoverage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVGeometryProgram4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVGpuProgram4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVGpuProgram5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVGpuShader5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVHalfFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVLightMaxExponent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVMultisampleCoverage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVMultisampleFilterHint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVOcclusionQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVPackedDepthStencil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVParameterBufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVPathRendering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVPixelDataRange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVPointSprite.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVPresentVideo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVPresentVideoUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVPrimitiveRestart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVProgram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVRegisterCombiners.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVRegisterCombiners2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVShaderBufferLoad.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVShaderBufferStore.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVTessellationProgram5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVTexgenReflection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVTextureBarrier.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVTextureCompressionVTC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVTextureEnvCombine4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVTextureExpandNormal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVTextureMultisample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVTextureRectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVTextureShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVTextureShader2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVTextureShader3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVTransformFeedback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVTransformFeedback2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVVertexArrayRange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVVertexArrayRange2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVVertexAttribInteger64bit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVVertexBufferUnifiedMemory.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVVertexProgram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVVertexProgram2Option.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVVertexProgram3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVVideoCapture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVVideoCaptureUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/NVXGpuMemoryInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/OpenGLException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/Pbuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/PixelFormat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/PixelFormatLWJGL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/RenderTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/SGISGenerateMipmap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/SGISTextureLOD.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/SUNSliceAccum.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/SharedDrawable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/Util.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/XRandR.Screen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/class-use/XRandR.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengl/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/AMDCompressed3DCTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/AMDCompressedATCTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/AMDPerformanceMonitor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/AMDProgramBinaryZ400.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/ANGLEFramebufferBlit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/ANGLEFramebufferMultisample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/APPLEFramebufferMultisample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/APPLERgb422.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/APPLETextureFormatBGRA8888.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/APPLETextureMaxLevel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/ARBDrawBuffers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/ARBHalfFloatPixel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/ARBTextureRectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/ARMMaliShaderBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/ARMRgba8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/ContextAttribs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/ContextCapabilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/DMPShaderBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EGL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EGLConfig.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EGLContext.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EGLDisplay.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EGLImageOES.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EGLKHRFenceSync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EGLKHRReusableSync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EGLNVSync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EGLSurface.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EGLSyncKHR.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EGLSyncNV.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTBgra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTBlendMinmax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTCgShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTColorBufferHalfFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTDebugLabel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTDebugMarker.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTDiscardFramebuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTMultiDrawArrays.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTMultisampledRenderToTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTOcclusionQueryBoolean.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTPackedFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTReadFormatBgra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTRobustness.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTSRGB.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTSeparateShaderObjects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTShadowSamplers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTTextureArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTTextureCompressionDXT1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTTextureCompressionLATC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTTextureCompressionS3TC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTTextureFilterAnisotropic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTTextureFormatBGRA8888.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTTextureLODBias.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTTextureRg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTTextureStorage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTTextureType2101010REV.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/EXTUnpackSubimage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/GLContext.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/GLES20.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/IMGMultisampledRenderToTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/IMGProgramBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/IMGReadFormat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/IMGShaderBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/IMGTextureCompressionPvrtc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/NVCoverageSample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/NVDepthNonlinear.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/NVDrawBuffers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/NVDrawPath.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/NVEGLStreamConsumerExternal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/NVFboColorAttachments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/NVFence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/NVFramebufferVertexAttribArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/NVGetTexImage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/NVPlatformBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/NVReadBuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/NVSystemTime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESBlendEquationSeparate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESBlendFuncSeparate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESBlendSubtract.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESCompressedETC1RGB8Texture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESCompressedPalettedTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESDepth24.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESDepth32.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESDepthTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESEGLImage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESEGLImageExternal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESElementIndexUint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESFramebufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESGetProgramBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESMapbuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESPackedDepthStencil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESRGB8RGBA8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESStandardDerivatives.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESStencil1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESStencil4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESStencil8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESTexture3D.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESTextureFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESTextureHalfFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESVertexArrayObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESVertexHalfFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/OESVertexType1010102.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/PixelFormat.Attrib.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/PixelFormat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/PowerManagementEventException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/QCOMDriverControl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/QCOMExtendedGet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/QCOMExtendedGet2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/QCOMPerformanceMonitorGlobalMode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/QCOMTiledRendering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/QCOMWriteonlyRendering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/Util.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/VIVShaderBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/AMDCompressed3DCTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/AMDCompressedATCTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/AMDPerformanceMonitor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/AMDProgramBinaryZ400.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/ANGLEFramebufferBlit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/ANGLEFramebufferMultisample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/APPLEFramebufferMultisample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/APPLERgb422.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/APPLETextureFormatBGRA8888.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/APPLETextureMaxLevel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/ARBDrawBuffers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/ARBHalfFloatPixel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/ARBTextureRectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/ARMMaliShaderBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/ARMRgba8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/ContextAttribs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/ContextCapabilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/DMPShaderBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EGL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EGLConfig.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EGLContext.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EGLDisplay.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EGLImageOES.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EGLKHRFenceSync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EGLKHRReusableSync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EGLNVSync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EGLSurface.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EGLSyncKHR.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EGLSyncNV.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTBgra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTBlendMinmax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTCgShader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTColorBufferHalfFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTDebugLabel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTDebugMarker.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTDiscardFramebuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTMultiDrawArrays.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTMultisampledRenderToTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTOcclusionQueryBoolean.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTPackedFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTReadFormatBgra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTRobustness.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTSRGB.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTSeparateShaderObjects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTShadowSamplers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTTextureArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTTextureCompressionDXT1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTTextureCompressionLATC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTTextureCompressionS3TC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTTextureFilterAnisotropic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTTextureFormatBGRA8888.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTTextureLODBias.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTTextureRg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTTextureStorage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTTextureType2101010REV.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/EXTUnpackSubimage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/GLContext.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/GLES20.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/IMGMultisampledRenderToTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/IMGProgramBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/IMGReadFormat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/IMGShaderBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/IMGTextureCompressionPvrtc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/NVCoverageSample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/NVDepthNonlinear.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/NVDrawBuffers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/NVDrawPath.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/NVEGLStreamConsumerExternal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/NVFboColorAttachments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/NVFence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/NVFramebufferVertexAttribArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/NVGetTexImage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/NVPlatformBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/NVReadBuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/NVSystemTime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESBlendEquationSeparate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESBlendFuncSeparate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESBlendSubtract.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESCompressedETC1RGB8Texture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESCompressedPalettedTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESDepth24.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESDepth32.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESDepthTexture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESEGLImage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESEGLImageExternal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESElementIndexUint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESFramebufferObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESGetProgramBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESMapbuffer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESPackedDepthStencil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESRGB8RGBA8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESStandardDerivatives.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESStencil1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESStencil4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESStencil8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESTexture3D.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESTextureFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESTextureHalfFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESVertexArrayObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESVertexHalfFloat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/OESVertexType1010102.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/PixelFormat.Attrib.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/PixelFormat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/PowerManagementEventException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/QCOMDriverControl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/QCOMExtendedGet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/QCOMExtendedGet2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/QCOMPerformanceMonitorGlobalMode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/QCOMTiledRendering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/QCOMWriteonlyRendering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/Util.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/class-use/VIVShaderBinary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/opengles/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/Color.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/Dimension.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/Display.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/Point.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/ReadableColor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/ReadableDimension.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/ReadablePoint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/ReadableRectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/Rectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/Renderable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/Timer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/WaveData.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/WritableColor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/WritableDimension.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/WritablePoint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/WritableRectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/XPMFile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/applet/AppletLoader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/applet/class-use/AppletLoader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/applet/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/applet/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/applet/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/applet/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/Color.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/Dimension.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/Display.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/Point.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/ReadableColor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/ReadableDimension.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/ReadablePoint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/ReadableRectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/Rectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/Renderable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/Timer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/WaveData.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/WritableColor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/WritableDimension.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/WritablePoint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/WritableRectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/class-use/XPMFile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/Cylinder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/Disk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/GLU.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/GLUtessellator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/GLUtessellatorCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/GLUtessellatorCallbackAdapter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/MipMap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/PartialDisk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/Project.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/Quadric.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/Registry.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/Sphere.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/Util.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/class-use/Cylinder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/class-use/Disk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/class-use/GLU.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/class-use/GLUtessellator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/class-use/GLUtessellatorCallback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/class-use/GLUtessellatorCallbackAdapter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/class-use/MipMap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/class-use/PartialDisk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/class-use/Project.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/class-use/Quadric.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/class-use/Registry.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/class-use/Sphere.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/class-use/Util.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/tessellation/GLUtessellatorImpl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/tessellation/class-use/GLUtessellatorImpl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/tessellation/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/tessellation/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/tessellation/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/glu/tessellation/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/input/ControllerAdapter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/input/class-use/ControllerAdapter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/input/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/input/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/input/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/input/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/jinput/LWJGLEnvironmentPlugin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/jinput/class-use/LWJGLEnvironmentPlugin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/jinput/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/jinput/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/jinput/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/jinput/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/CacheLinePad.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/CacheUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/MappedField.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/MappedHelper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/MappedObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/MappedObjectClassLoader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/MappedObjectTransformer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/MappedSet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/MappedSet2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/MappedSet3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/MappedSet4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/MappedType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/Pointer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/class-use/CacheLinePad.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/class-use/CacheUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/class-use/MappedField.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/class-use/MappedHelper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/class-use/MappedObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/class-use/MappedObjectClassLoader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/class-use/MappedObjectTransformer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/class-use/MappedSet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/class-use/MappedSet2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/class-use/MappedSet3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/class-use/MappedSet4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/class-use/MappedType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/class-use/Pointer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/mapped/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/Matrix.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/Matrix2f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/Matrix3f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/Matrix4f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/Quaternion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/ReadableVector.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/ReadableVector2f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/ReadableVector3f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/ReadableVector4f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/Vector.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/Vector2f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/Vector3f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/Vector4f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/WritableVector2f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/WritableVector3f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/WritableVector4f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/Matrix.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/Matrix2f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/Matrix3f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/Matrix4f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/Quaternion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/ReadableVector.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/ReadableVector2f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/ReadableVector3f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/ReadableVector4f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/Vector.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/Vector2f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/Vector3f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/Vector4f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/WritableVector2f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/WritableVector3f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/class-use/WritableVector4f.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/org/lwjgl/util/vector/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/overview-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/overview-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/package-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/resources/inherit.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/serialized-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/javadoc/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/linux/libjinput-linux.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/linux/libjinput-linux64.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/linux/liblwjgl.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/linux/liblwjgl64.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/linux/libopenal.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/linux/libopenal64.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/macosx/libjinput-osx.jnilib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/macosx/liblwjgl.jnilib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/macosx/openal.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/solaris/liblwjgl.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/solaris/liblwjgl64.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/solaris/libopenal.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/solaris/libopenal64.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/windows/OpenAL32.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/windows/OpenAL64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/windows/Stick Adventures.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/windows/jinput-dx8.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/windows/jinput-dx8_64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/windows/jinput-raw.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/windows/jinput-raw_64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/windows/lwjgl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl/native/windows/lwjgl64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notinuse/DVDZombie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notinuse/FastZombie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notinuse/GameOver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notinuse/GreatZombie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notinuse/Help.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notinuse/MenuParticle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notinuse/SmartZombie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/AK47_bullet.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/AWP_bullet.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Moment-of-Strange.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/background_music.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/click_sound.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/empty_bullet_shell_fall.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/haha.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/negev_bullet.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/pause.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/pistol_bullet.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/pursuit.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/shotgun_bullet.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/shotgun_reload.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/uzi_bullet.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/zombie.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/zombie_come_here.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/zombie_death.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/zombie_got_shot.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AK47Ammo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AK47Bullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AWPAmmo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AWPBullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ammo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AudioPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Block.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BufferedImageLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EasyZombie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HUD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HardZombie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KeyInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MouseInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NegevAmmo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NegevBullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NormalZombie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pause.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PistolAmmo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PistolBullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShotgunAmmo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShotgunBullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Spawn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SpriteSheet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Trail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UziAmmo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UziBullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Zombie.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-935321418">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="38" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.10" value="6" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="10" />
+          <entry key="project.open.time.9" value="15" />
+          <entry key="project.opened" value="40" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="452" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="452" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="44" />
+          <entry key="java" value="33566" />
+          <entry key="txt" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="33566" />
+          <entry key="PLAIN_TEXT" value="57" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1850">
+              <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Shop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3750">
+              <caret line="153" column="44" selection-start-line="153" selection-start-column="44" selection-end-line="153" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1625">
+              <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MouseInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1000">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AudioPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ini</find>
+      <find>play</find>
+      <find>start</find>
+      <find>pause</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ClickHandler.java" />
+        <option value="$PROJECT_DIR$/src/MenuPartical.java" />
+        <option value="$PROJECT_DIR$/src/FastZombie.java" />
+        <option value="$PROJECT_DIR$/src/GameObject.java" />
+        <option value="$PROJECT_DIR$/src/Help.java" />
+        <option value="$PROJECT_DIR$/src/Window.java" />
+        <option value="$PROJECT_DIR$/src/BufferedImageLoader.java" />
+        <option value="$PROJECT_DIR$/src/SpriteSheet.java" />
+        <option value="$PROJECT_DIR$/src/MenuParticle.java" />
+        <option value="$PROJECT_DIR$/src/Ammu.java" />
+        <option value="$PROJECT_DIR$/src/SmartZombie.java" />
+        <option value="$PROJECT_DIR$/src/Block.java" />
+        <option value="$PROJECT_DIR$/src/Trail.java" />
+        <option value="$PROJECT_DIR$/src/GameOver.java" />
+        <option value="$PROJECT_DIR$/src/ShoutgunAmmo.java" />
+        <option value="$PROJECT_DIR$/src/Zombie.java" />
+        <option value="$PROJECT_DIR$/src/GreatZombie.java" />
+        <option value="$PROJECT_DIR$/src/Ammo.java" />
+        <option value="$PROJECT_DIR$/src/MachinegunAmmo.java" />
+        <option value="$PROJECT_DIR$/src/Bullet.java" />
+        <option value="$PROJECT_DIR$/src/MachinegunBullet.java" />
+        <option value="$PROJECT_DIR$/notinuse/GameOver.java" />
+        <option value="$PROJECT_DIR$/src/Handler.java" />
+        <option value="$PROJECT_DIR$/src/Pause.java" />
+        <option value="$PROJECT_DIR$/src/ID.java" />
+        <option value="$PROJECT_DIR$/src/Menu.java" />
+        <option value="$PROJECT_DIR$/src/NormalZombie.java" />
+        <option value="$PROJECT_DIR$/src/HardZombie.java" />
+        <option value="$PROJECT_DIR$/src/EasyZombie.java" />
+        <option value="$PROJECT_DIR$/src/HUD.java" />
+        <option value="$PROJECT_DIR$/src/KeyInput.java" />
+        <option value="$PROJECT_DIR$/src/AK47Bullet.java" />
+        <option value="$PROJECT_DIR$/src/AK47Ammo.java" />
+        <option value="$PROJECT_DIR$/src/PistolAmmo.java" />
+        <option value="$PROJECT_DIR$/src/PistolBullet.java" />
+        <option value="$PROJECT_DIR$/src/ShotgunAmmo.java" />
+        <option value="$PROJECT_DIR$/src/ShotgunBullet.java" />
+        <option value="$PROJECT_DIR$/src/NegevBullet.java" />
+        <option value="$PROJECT_DIR$/src/UziBullet.java" />
+        <option value="$PROJECT_DIR$/src/NegevAmmo.java" />
+        <option value="$PROJECT_DIR$/src/UziAmmo.java" />
+        <option value="$PROJECT_DIR$/src/AWPBuulet.java" />
+        <option value="$PROJECT_DIR$/src/AWPAmmo.java" />
+        <option value="$PROJECT_DIR$/src/Spawn.java" />
+        <option value="$PROJECT_DIR$/src/Game.java" />
+        <option value="$PROJECT_DIR$/src/Player.java" />
+        <option value="$PROJECT_DIR$/src/Shop.java" />
+        <option value="$PROJECT_DIR$/src/AudioPlayer.java" />
+        <option value="$PROJECT_DIR$/src/MouseInput.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="70" />
+    <option name="y" value="5" />
+    <option name="width" value="1750" />
+    <option name="height" value="970" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Zombie Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zombie Game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Zombie Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zombie Game" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Zombie Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zombie Game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Zombie Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="Zombie Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Zombie Game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Zombie Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Zombie Game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558784832972" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\אייל\Desktop\Zombie Game\res" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\אייל\Desktop\Zombie Game\notinuse" />
+      <recent name="C:\Users\אייל\Desktop\Zombie Game\res" />
+      <recent name="C:\Users\אייל\Desktop\Zombie Game\libs" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Game" />
+      <module name="Zombie Game" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=libs/" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Game" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b516f943-37ca-4aee-b8b3-93206aa6ecef" name="Default Changelist" comment="" />
+      <created>1549875848500</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549875848500</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.21879195" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.20992908" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32941177" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info active="true" anchor="bottom" x="28" y="336" width="1480" height="151" id="Run" order="10" visible="true" weight="0.21985815" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Commander" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24324325" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.21029411" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32941177" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" x="28" y="336" width="1480" height="151" id="Run" order="10" visible="true" weight="0.22058824" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Commander" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FIRST UPLOAD" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIRST UPLOAD" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/MenuPartical.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.desktop/java/awt/AlphaComposite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5934">
+          <caret line="347" column="19" selection-start-line="347" selection-start-column="19" selection-end-line="347" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.desktop/java/awt/Graphics2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="858" column="25" selection-start-line="858" selection-start-column="25" selection-end-line="858" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.desktop/java/awt/event/HierarchyBoundsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.desktop/java/awt/Font.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="570" column="11" selection-start-line="570" selection-start-column="11" selection-end-line="570" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notinuse/FastZombie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notinuse/DVDZombie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.desktop/java/awt/Polygon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-373">
+          <caret line="125" column="11" selection-start-line="125" selection-start-column="11" selection-end-line="125" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.base/javafx/beans/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notinuse/MenuParticle.java" />
+    <entry file="file://$PROJECT_DIR$/src/BufferedImageLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-440">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SpriteSheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Trail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.desktop/java/awt/event/KeyAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ammu.java" />
+    <entry file="file://$PROJECT_DIR$/notinuse/GreatZombie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="38" column="63" lean-forward="true" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ammo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notinuse/GameOver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pause.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notinuse/Help.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3763">
+          <caret line="246" column="102" selection-start-line="246" selection-start-column="102" selection-end-line="246" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyZombie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HardZombie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KeyInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AK47Ammo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PistolAmmo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PistolBullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShotgunAmmo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShotgunBullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NegevBullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UziBullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UziAmmo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NegevAmmo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="11" column="45" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AK47Bullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="45" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AWPBullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AWPAmmo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NormalZombie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Zombie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Spawn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="138" column="46" selection-start-line="138" selection-start-column="46" selection-end-line="138" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1850">
+          <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3750">
+          <caret line="153" column="44" selection-start-line="153" selection-start-column="44" selection-end-line="153" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1625">
+          <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MouseInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AudioPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Zombie Game</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
