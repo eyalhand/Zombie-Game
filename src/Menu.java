@@ -26,15 +26,15 @@ public class Menu extends MouseAdapter {
         this.mouseInput = null;
 
         SpriteSheet spriteSheet1  = new SpriteSheet(Game.spriteSheet);
-        zombieImage = spriteSheet1.grabImage(1,1,640,480);
+        zombieImage = spriteSheet1.grabImage(1,1,(int)game.WIDTH,(int)game.HEIGHT);
 
         startPositionsX[0] = (float) r.nextInt(10) * -1;
-        startPositionsX[1] = (float) Math.random()*11 + Game.WIDTH;
-        startPositionsX[2] = (float) r.nextInt(Game.WIDTH);
+        startPositionsX[1] = (float) Math.random()*11 + (int)game.WIDTH;
+        startPositionsX[2] = (float) r.nextInt((int)game.WIDTH);
 
         startPositionsY[0] = (float) r.nextInt(10) * -1;
-        startPositionsY[1] = (float) Math.random()*11 + Game.HEIGHT;
-        startPositionsY[2] = (float) r.nextInt(Game.HEIGHT);
+        startPositionsY[1] = (float) Math.random()*11 + (int)game.HEIGHT;
+        startPositionsY[2] = (float) r.nextInt((int)game.HEIGHT);
     }
 
     public void mousePressed(MouseEvent e) {
@@ -123,7 +123,6 @@ public class Menu extends MouseAdapter {
             if (mouseOver(mx, my, 220, 360, 130, 48)) {
 
                 game.setGameState(Game.STATE.Menu);
-                AudioPlayer.getSound("haha").stop();
                 AudioPlayer.getMusic("background_music").loop();
 
                 newGame();
@@ -196,7 +195,7 @@ public class Menu extends MouseAdapter {
 
             g.setFont(font);
             g.setColor(Color.white);
-            g.drawString("Help",Game.WIDTH/2 - 64,65);
+            g.drawString("Help",(int)game.WIDTH/2 - 64,65);
 
             g.setFont(font2);
             g.setColor(new Color(100,0,0));
@@ -208,7 +207,9 @@ public class Menu extends MouseAdapter {
             g.drawString("Press Esc To Pause",150,255);
             g.drawString("Press Space To Shop",150,290);
             g.drawString("The Little Dots Are Your Ammo",150,325);
-            g.drawString("Good Luck !",380,390);
+            g.drawString("Collect Them!",150,360);
+            g.drawString("Press G if you want to use your Grenades!",150,395);
+            g.drawString("Good Luck !",380,430);
 
             g.setColor(new Color(0,255,100));
             g.drawString("Back",20,26);
@@ -220,7 +221,7 @@ public class Menu extends MouseAdapter {
 
             g.setFont(font);
             g.setColor(Color.red);
-            g.drawString("Ha Ha, You Lost !",115,50);
+            g.drawString("You Lost, Loser !",115,50);
 
             g.setFont(font2);
             g.setColor(Color.white);
@@ -235,19 +236,18 @@ public class Menu extends MouseAdapter {
     }
 
     private void start() {
-        Player player = new Player(Game.WIDTH / 2 - 32, Game.HEIGHT / 2 - 32, ID.Player, handler,game);
+        Player player = new Player((int)game.WIDTH / 2 - 32, (int)game.HEIGHT / 2 - 32, ID.Player, handler,game);
         handler.addObject(player);
-        Block block = new Block(120, 70, 20, 80, ID.Block, player);
-        handler.addObject(block);
+        player.initialize();
         if (Game.DIFF == 0) {
-            handler.addObject(new EasyZombie(chooseCord().getKey(), chooseCord().getValue(), ID.Zombie, player, handler, block, 0));
+            handler.addObject(new EasyZombie(game,chooseCord().getKey(), chooseCord().getValue(), ID.Zombie, player, handler, 0));
         } else if (Game.DIFF == 1) {
-            handler.addObject(new NormalZombie(chooseCord().getKey(), chooseCord().getValue(), ID.Zombie, player, handler, block, 0));
+            handler.addObject(new NormalZombie(game,chooseCord().getKey(), chooseCord().getValue(), ID.Zombie, player, handler, 0));
         } else if (Game.DIFF == 2) {
-            handler.addObject(new HardZombie(chooseCord().getKey(), chooseCord().getValue(), ID.Zombie, player, handler, block, 0));
+            handler.addObject(new HardZombie(game,chooseCord().getKey(), chooseCord().getValue(), ID.Zombie, player, handler, 0));
         }
 
-        game.setSpawner(new Spawn(handler, player,block,game));
+        game.setSpawner(new Spawn(handler, player,game));
         if (mouseInput != null) {
             game.removeMouseListener(mouseInput);
         }
@@ -259,7 +259,7 @@ public class Menu extends MouseAdapter {
     private Pair<Float,Float> chooseCord(){
         float x = startPositionsX[r.nextInt(3)];
         float y;
-        if (x < Game.WIDTH && x > 0) {
+        if (x < (int)game.WIDTH && x > 0) {
             y = startPositionsY[r.nextInt(2)];
         } else {
             y = startPositionsY[r.nextInt(3)];
@@ -271,6 +271,7 @@ public class Menu extends MouseAdapter {
         HUD.initialize();
         Spawn.initialize();
         Shop.initialize();
+
         handler.speed = 5;
         handler.getLst().clear();
         game.setGameAmmo(Game.Ammo.Pistol);

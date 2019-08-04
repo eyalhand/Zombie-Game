@@ -5,6 +5,5 @@ public enum ID {
     Zombie(),
     Bullet(),
     Ammo(),
-    Trail(),
-    Block()
+    Trail()
 }

@@ -5,9 +5,11 @@ public class HUD {
     public static int bounds;
     public static float Health, greenValue;
     public static int score, level, zombiesKilled;
+    public Game game;
 
-    public HUD() {
+    public HUD(Game game) {
         initialize();
+        this.game = game;
     }
 
     public static void initialize(){
@@ -47,7 +49,7 @@ public class HUD {
         g.drawString("Zombies Killed: " + zombiesKilled, 15, 80);
 
         g.setFont(new Font("Times New Roman", 15, 13));
-        g.drawString("Press Space For Shop", Game.WIDTH - 132, 25);
+        g.drawString("Press Space For Shop", (int)game.WIDTH - 132, 25);
 
     }
 }

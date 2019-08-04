@@ -1,14 +1,14 @@
 import org.newdawn.slick.SlickException;
-
 import java.awt.*;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.util.LinkedList;
 
 public class Game extends Canvas implements Runnable {
 
-    public static int WIDTH = 640, HEIGHT = WIDTH/12*9;
+    Toolkit toolkit = Toolkit.getDefaultToolkit();
+
+    public double WIDTH = toolkit.getScreenSize().getWidth(), HEIGHT = toolkit.getScreenSize().getHeight();
     private String title = "Zombies Attack";
 
     private Thread thread;
@@ -18,11 +18,6 @@ public class Game extends Canvas implements Runnable {
     //0 = easy
     //1 = normal
     //2 = hard
-    public static int MODE = 0;
-    //0 = one player mode
-    //1 = two player mode
-
-    private LinkedList<Block> blocks = new LinkedList<>();
 
     //Instances
     private Handler handler;
@@ -49,17 +44,20 @@ public class Game extends Canvas implements Runnable {
         Uzi,
         AK47,
         Negev,
-        AWP
+        AWP,
+        grenade
     }
 
     private STATE gameState = STATE.Menu;
     private Ammo gameAmmo = Ammo.Pistol;
+
+    private boolean cond = false;
     public static BufferedImage spriteSheet;
 
     public Game() throws SlickException, IOException {
         init();
 
-        new Window(WIDTH,HEIGHT,title,this);
+        new Window((int)WIDTH,(int)HEIGHT,title,this);
 
         start();
     }
@@ -73,7 +71,7 @@ public class Game extends Canvas implements Runnable {
         spawner = null;
         mouseInput = null;
         handler = new Handler();
-        hud = new HUD();
+        hud = new HUD(this);
         shop = new Shop(handler,hud,this);
         menu = new Menu(this,handler,hud);
         pause = new Pause(this,handler);
@@ -145,7 +143,6 @@ public class Game extends Canvas implements Runnable {
                 handler.getLst().clear();
                 gameState = STATE.GameOver;
                 AudioPlayer.getMusic("pursuit").stop();
-                AudioPlayer.getSound("haha").play();
             }
         }
         else if (gameState == STATE.GameOver) {
@@ -172,7 +169,7 @@ public class Game extends Canvas implements Runnable {
         Graphics graphics = bs.getDrawGraphics();
 
         graphics.setColor(Color.black);
-        graphics.fillRect(0,0,WIDTH,HEIGHT);
+        graphics.fillRect(0,0,(int)WIDTH,(int)HEIGHT);
 
         handler.render(graphics);
         if (gameState == STATE.Game) hud.render(graphics);
@@ -196,6 +193,14 @@ public class Game extends Canvas implements Runnable {
             return var;
     }
 
+    public double getWIDTH() { return WIDTH; }
+
+    public double getHEIGHT() { return HEIGHT; }
+
+    public boolean getCond() { return cond; }
+
+    public void setCond() { cond = !cond; }
+
     public void setSpawner(Spawn spawner) { this.spawner = spawner; }
 
     public void setMouseInput(MouseInput mouseInput) { this.mouseInput = mouseInput; }
@@ -207,10 +212,6 @@ public class Game extends Canvas implements Runnable {
     public Ammo getGameAmmo() { return gameAmmo; }
 
     public void setGameAmmo(Ammo gameAmmo) { this.gameAmmo = gameAmmo; }
-
-    public void addBlock(Block block) {
-        blocks.add(block);
-    }
 
     public static void main(String[]args) throws SlickException, IOException {
         new Game();

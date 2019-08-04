@@ -9,6 +9,6 @@ public class AWPAmmo extends Ammo {
     @Override
     public void render(Graphics g) {
         g.setColor(new Color(100,200,0));
-        g.fillOval((int) x, (int) y, 12, 12);
+        g.fillOval((int) x, (int) y, 14, 14);
     }
 }

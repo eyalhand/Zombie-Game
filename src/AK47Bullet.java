@@ -2,8 +2,8 @@ import java.awt.*;
 
 public class AK47Bullet extends Bullet {
 
-    public AK47Bullet(float x, float y, float mx, float my, ID id, Handler handler) {
-        super(x, y, mx, my, id, handler);
+    public AK47Bullet(Game game,float x, float y, float mx, float my, ID id, Handler handler) {
+        super(game,x, y, mx, my, id, handler);
     }
 
     @Override

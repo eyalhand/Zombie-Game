@@ -5,15 +5,18 @@ import java.util.Random;
 public abstract class Bullet extends GameObject {
 
     private Handler handler;
+    private Game game;
 
-    private float SPEED = 13;//constant speed of a bullet
+    private float SPEED = 13; //constant speed of a bullet
 
-    public Bullet(float x, float y, float mx, float my, ID id, Handler handler) {
+    public Bullet(Game game,float x, float y, float mx, float my, ID id, Handler handler) {
         super(x, y, id);
         this.handler = handler;
 
         this.velX = gunShot(mx,my,x,y).getKey();
         this.velY = gunShot(mx,my,x,y).getValue();
+
+        this.game = game;
     }
 
     @Override
@@ -22,7 +25,8 @@ public abstract class Bullet extends GameObject {
         x += velX;
         y += velY;
 
-        if (y >= Game.HEIGHT || x >= Game.WIDTH || x < 0 || y < 0) handler.removeObject(this);
+        if (y >= (int)game.HEIGHT || x >= (int)game.WIDTH || x < 0 || y < 0) handler.removeObject(this);
+
     }
 
     @Override
@@ -48,7 +52,12 @@ public abstract class Bullet extends GameObject {
     }
 
     public Rectangle getBounds() {
-        return new Rectangle((int) x, (int) y, 8, 8);
+        if (!(game.getGameAmmo() == Game.Ammo.grenade && game.getCond())) {
+            return new Rectangle((int) x, (int) y, 8, 8);
+        }
+        else {
+            return new Rectangle((int) x, (int) y, 300, 300);
+        }
     }
 
     public float getSPEED() {

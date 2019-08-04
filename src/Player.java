@@ -6,7 +6,7 @@ public class Player extends GameObject {
     private Handler handler;
 
     private static int ammo = 0;
-    private static int stamina = 0;
+    private static int grenades = 0;
 
     public Player(float x, float y, ID id, Handler handler,Game game) {
         super(x, y, id);
@@ -19,8 +19,8 @@ public class Player extends GameObject {
         x += velX;
         y += velY;
 
-        x = Game.clamp(x,0,Game.WIDTH - 50);
-        y = Game.clamp(y,0,Game.HEIGHT - 70);
+        x = Game.clamp(x,0,(int)game.WIDTH - 50);
+        y = Game.clamp(y,0,(int)game.HEIGHT - 70);
 
         collision();
     }
@@ -34,7 +34,10 @@ public class Player extends GameObject {
         g.setColor(Color.white);
         g.setFont(new Font("arial",8,13));
         g.drawString("Ammo: " + ammo, 15, 94);
-        g.drawString("(" + game.getGameAmmo() + ")", 15, 110);
+        if (game.getGameAmmo() == Game.Ammo.grenade) {
+            g.drawString("Grenades: " + grenades, 15, 110);
+        }
+        g.drawString("(" + game.getGameAmmo() + ")", 15, 125);
     }
 
     public Rectangle getBounds() {
@@ -58,21 +61,9 @@ public class Player extends GameObject {
 
     public static void setAmmu(int inc) { ammo += inc; }
 
-    public void setStamina(char c) {
-        stamina ++;
-        if (stamina > 5) {
-            if (c == 'a')
-                this.setVelX(this.getX() + 1);
-            else if (c == 'd')
-                this.setVelX(this.getX() - 1);
-            else if (c == 'w')
-                this.setVelY(this.getY() + 1);
-            else if (c == 's')
-                this.setVelY(this.getY() - 1);
-        }
-    }
+    public static int getGrenades() { return grenades; }
 
-    public void relax() { stamina--; }
+    public static void setGrenades(int inc) { grenades += inc; }
 
     private void ammoCollision(GameObject tempObject) {
         if (game.getGameAmmo() == Game.Ammo.Pistol) {
@@ -112,11 +103,25 @@ public class Player extends GameObject {
         }
         else if (game.getGameAmmo() == Game.Ammo.AWP) {
             if (getBounds().intersects(tempObject.getBounds())) {
-                //NegevAmmo code
+                //AWP code
                 ammo += 10;
                 handler.removeObject(tempObject);
             }
         }
+        else if (game.getGameAmmo() == Game.Ammo.grenade) {
+            if (getBounds().intersects(tempObject.getBounds())) {
+                if (game.getCond()) {
+                    //Grenade code
+                    grenades += 5;
+                    handler.removeObject(tempObject);
+                }
+                else {
+                    //AWP code
+                    ammo += 10;
+                    handler.removeObject(tempObject);
+                }
+            }
+        }
     }
-    //public void initialize() { ammo = 0; }
+    public void initialize() { ammo = 0; grenades = 0; }
 }

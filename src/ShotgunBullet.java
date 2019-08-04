@@ -2,8 +2,8 @@ import java.awt.*;
 
 public class ShotgunBullet extends Bullet {
 
-    public ShotgunBullet(float x, float y, float mx, float my, ID id, Handler handler) {
-        super(x, y, mx, my, id, handler);
+    public ShotgunBullet(Game game,float x, float y, float mx, float my, ID id, Handler handler) {
+        super(game,x, y, mx, my, id, handler);
         super.setSPEED(super.getSPEED() - 2);
     }
 

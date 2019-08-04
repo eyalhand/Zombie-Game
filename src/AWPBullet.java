@@ -2,8 +2,8 @@ import java.awt.*;
 
 public class AWPBullet extends Bullet {
 
-    public AWPBullet(float x, float y, float mx, float my, ID id, Handler handler) {
-        super(x, y, mx, my, id, handler);
+    public AWPBullet(Game game,float x, float y, float mx, float my, ID id, Handler handler) {
+        super(game,x, y, mx, my, id, handler);
     }
 
     @Override

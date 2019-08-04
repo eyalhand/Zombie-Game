@@ -52,7 +52,7 @@ public class Shop extends MouseAdapter {
                 }
             }
             //item 2
-            if (mouseOver(mx, my, 85, 180, 190, 20)) {
+            if (mouseOver(mx, my, 85, 180, 210, 20)) {
                 B2Counter++;
                 if (hud.getScore() >= B2 && B2Counter <= 8) {
                     hud.setScore(hud.getScore() - B2);
@@ -71,6 +71,9 @@ public class Shop extends MouseAdapter {
                     }
                     else if (game.getGameAmmo() == Game.Ammo.Negev) {
                         game.setGameAmmo(Game.Ammo.AWP);
+                    }
+                    else if (game.getGameAmmo() == Game.Ammo.AWP) {
+                        game.setGameAmmo(Game.Ammo.grenade);
                     }
                 }
             }
@@ -126,9 +129,14 @@ public class Shop extends MouseAdapter {
         g.drawString("Cost: " + B1 + "yal's", 320, 150);
 
         //item 2
-        more = color(B2,g,B2Counter,8,100,200);
+        more = color(B2,g,B2Counter,7,100,200);
         if (more == true) {
-            g.drawString("Upgrade Weapon", 100, 200);
+            if (B2 == 7) {
+                g.drawString("Unlock grenades", 100, 200);
+            }
+            else {
+                g.drawString("Upgrade Weapon", 100, 200);
+            }
         }
         g.drawString("Cost: " + B2 + "yal's", 320, 200);
 
