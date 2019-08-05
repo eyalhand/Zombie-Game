@@ -17,7 +17,7 @@ public abstract class Zombie extends GameObject {
             GameObject tempObject = handler.getLst().get(i);
             if (tempObject.getId() == ID.Bullet) {
                 if (getBounds().intersects(tempObject.getBounds())) {
-                    if (game.getCond() && game.getGameAmmo() == Game.Ammo.grenade) {
+                    if (game.getCond() && game.getGameAmmo() == Game.Ammo.Blazer) {
                         //collision code
                         health -= changeOfHealth + 8;
                         if (health <= 0) {
@@ -27,14 +27,16 @@ public abstract class Zombie extends GameObject {
                             handler.removeObject(this);
                         }
                     }
-                    //collision code
-                    handler.removeObject(tempObject);
-                    health -= changeOfHealth + AD;
-                    if (health <= 0) {
-                        AudioPlayer.getSound("zombie_death").play();
-                        HUD.score += 100;
-                        HUD.zombiesKilled++;
-                        handler.removeObject(this);
+                    else {
+                        //collision code
+                        handler.removeObject(tempObject);
+                        health -= changeOfHealth + AD;
+                        if (health <= 0) {
+                            AudioPlayer.getSound("zombie_death").play();
+                            HUD.score += 100;
+                            HUD.zombiesKilled++;
+                            handler.removeObject(this);
+                        }
                     }
                 }
             }

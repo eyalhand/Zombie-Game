@@ -73,7 +73,7 @@ public class Shop extends MouseAdapter {
                         game.setGameAmmo(Game.Ammo.AWP);
                     }
                     else if (game.getGameAmmo() == Game.Ammo.AWP) {
-                        game.setGameAmmo(Game.Ammo.grenade);
+                        game.setGameAmmo(Game.Ammo.Blazer);
                     }
                 }
             }
@@ -122,16 +122,16 @@ public class Shop extends MouseAdapter {
 
         //item 1
         g.setFont(font2);
-        more = color(B1,g,B1Counter,6,100,150);
+        more = color(B1,g,B1Counter,5,100,150);
         if (more == true) {
             g.drawString("Upgrade Health", 100, 150);
         }
         g.drawString("Cost: " + B1 + "yal's", 320, 150);
 
         //item 2
-        more = color(B2,g,B2Counter,7,100,200);
+        more = color(B2,g,B2Counter,5,100,200);
         if (more == true) {
-            if (B2 == 7) {
+            if (B2 == 5) {
                 g.drawString("Unlock grenades", 100, 200);
             }
             else {
@@ -184,20 +184,20 @@ public class Shop extends MouseAdapter {
                 g.setColor(Color.gray);
         }
         else {
-            if (hud.getScore() >= B) {
-                if (counter <= limit) {
+            if (counter <= limit) {
+                if (hud.getScore() >= B) {
                     g.setColor(Color.white);
                     return true;
                 }
                 else {
                     g.setColor(Color.gray);
-                    g.drawString("No More Upgrades",x,y);
-                    return false;
+                    return true;
                 }
             }
             else {
                 g.setColor(Color.gray);
-                return true;
+                g.drawString("No More Upgrades", x, y);
+                return false;
             }
         }
         return true;

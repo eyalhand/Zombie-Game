@@ -1,7 +1,10 @@
 import javafx.stage.Screen;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class Window {
 
@@ -17,9 +20,8 @@ public class Window {
 
         frame.setSize((int) width, (int) height);
 
-
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setResizable(false);
+        frame.setResizable(true);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
         frame.add(game);

@@ -25,53 +25,53 @@ public class MouseInput extends MouseAdapter {
             clickDown = true;
             if (player.getAmmo() > 0 && clickDown) {
                 if (game.getGameAmmo() == Game.Ammo.Pistol) {
-                    handler.addObject(new PistolBullet(game,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
+                    handler.addObject(new PistolBullet(game,player,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
                     AudioPlayer.getSound("pistol_bullet").play();
                     player.setAmmu(-1);
                 }
                 else if (game.getGameAmmo() == Game.Ammo.Shotgun) {
-                    handler.addObject(new ShotgunBullet(game,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
+                    handler.addObject(new ShotgunBullet(game,player,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
                     AudioPlayer.getSound("shotgun_reload").play();
                     AudioPlayer.getSound("empty_bullet_shell_fall").play();
                     player.setAmmu(-1);
                 }
                 else if (game.getGameAmmo() == Game.Ammo.Uzi) {
-                    handler.addObject(new UziBullet(game,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
+                    handler.addObject(new UziBullet(game,player,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
                     AudioPlayer.getSound("uzi_shot").play();
                     player.setAmmu(-1);
                 }
                 else if (game.getGameAmmo() == Game.Ammo.AK47) {
-                    handler.addObject(new AK47Bullet(game,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
+                    handler.addObject(new AK47Bullet(game,player,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
                     AudioPlayer.getSound("AK47_bullet").play();
                     player.setAmmu(-1);
                 }
                 else if (game.getGameAmmo() == Game.Ammo.Negev) {
-                    handler.addObject(new NegevBullet(game,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
+                    handler.addObject(new NegevBullet(game,player,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
                     AudioPlayer.getSound("negev_bullet").play();
                     player.setAmmu(-1);
                 }
                 else if (game.getGameAmmo() == Game.Ammo.AWP) {
-                    handler.addObject(new AWPBullet(game,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
+                    handler.addObject(new AWPBullet(game,player,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
                     AudioPlayer.getSound("AWP_bullet").play();
                     player.setAmmu(-1);
                 }
-                else if (game.getGameAmmo() == Game.Ammo.grenade) {
-                    if (player.getGrenades() > 0 && game.getCond()) {
-                        handler.addObject(new Grenade(game, player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
+                else if (game.getGameAmmo() == Game.Ammo.Blazer) {
+                    if (player.getBlazers() > 0 && game.getCond()) {
+                        handler.addObject(new BlazersBullet(game, player,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
                         AudioPlayer.getSound("grenade_boom").play();
-                        player.setGrenades(-1);
+                        player.setBlazers(-1);
                     }
-                    else {
-                        handler.addObject(new AWPBullet(game,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
+                    else if (!game.getCond()){
+                        handler.addObject(new AWPBullet(game,player,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
                         AudioPlayer.getSound("AWP_bullet").play();
                         player.setAmmu(-1);
                     }
                 }
             }
-            else  if (player.getGrenades() > 0 && game.getCond() && clickDown) {
-                handler.addObject(new Grenade(game, player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
+            else if (player.getBlazers() > 0 && game.getCond() && clickDown) {
+                handler.addObject(new BlazersBullet(game, player,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
                 AudioPlayer.getSound("grenade_boom").play();
-                player.setGrenades(-1);
+                player.setBlazers(-1);
             }
         }
     }

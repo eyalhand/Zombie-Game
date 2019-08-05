@@ -6,10 +6,11 @@ public abstract class Bullet extends GameObject {
 
     private Handler handler;
     private Game game;
+    private Player player;
 
-    private float SPEED = 13; //constant speed of a bullet
+    private float SPEED = 13;
 
-    public Bullet(Game game,float x, float y, float mx, float my, ID id, Handler handler) {
+    public Bullet(Game game,Player player,float x, float y, float mx, float my, ID id, Handler handler, float SPEED) {
         super(x, y, id);
         this.handler = handler;
 
@@ -17,6 +18,8 @@ public abstract class Bullet extends GameObject {
         this.velY = gunShot(mx,my,x,y).getValue();
 
         this.game = game;
+        this.SPEED = SPEED;
+        this.player = player;
     }
 
     @Override
@@ -52,11 +55,11 @@ public abstract class Bullet extends GameObject {
     }
 
     public Rectangle getBounds() {
-        if (!(game.getGameAmmo() == Game.Ammo.grenade && game.getCond())) {
+        if (!(game.getGameAmmo() == Game.Ammo.Blazer && game.getCond() && player.getBlazers() > 0)) {
             return new Rectangle((int) x, (int) y, 8, 8);
         }
         else {
-            return new Rectangle((int) x, (int) y, 300, 300);
+            return new Rectangle((int) x - 100, (int) y - 100, 200, 200);
         }
     }
 

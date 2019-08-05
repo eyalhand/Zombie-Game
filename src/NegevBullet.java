@@ -2,9 +2,8 @@ import java.awt.*;
 
 public class NegevBullet extends Bullet {
 
-    public NegevBullet(Game game,float x, float y, float mx, float my, ID id, Handler handler) {
-        super(game,x, y, mx, my, id, handler);
-        super.setSPEED(super.getSPEED() + 8);
+    public NegevBullet(Game game,Player player,float x, float y, float mx, float my, ID id, Handler handler) {
+        super(game,player,x, y, mx, my, id, handler,15);
     }
 
     @Override

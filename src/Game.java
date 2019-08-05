@@ -1,4 +1,6 @@
 import org.newdawn.slick.SlickException;
+
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
@@ -45,13 +47,14 @@ public class Game extends Canvas implements Runnable {
         AK47,
         Negev,
         AWP,
-        grenade
+        Blazer
     }
 
     private STATE gameState = STATE.Menu;
     private Ammo gameAmmo = Ammo.Pistol;
 
     private boolean cond = false;
+    public int onoffCounter = 0;
     public static BufferedImage spriteSheet;
 
     public Game() throws SlickException, IOException {
@@ -65,8 +68,9 @@ public class Game extends Canvas implements Runnable {
     private void init() throws SlickException, IOException {
         AudioPlayer.load();
         AudioPlayer.getMusic("background_music").loop();
-        BufferedImageLoader loader = new BufferedImageLoader();
-        spriteSheet = loader.loadImage("/res/zombie.jpg");
+        //BufferedImageLoader loader = new BufferedImageLoader();
+        //spriteSheet = loader.loadImage("/res/d.jpg");
+        spriteSheet = ImageIO.read(getClass().getResource("/res/z.jpg"));
 
         spawner = null;
         mouseInput = null;
@@ -143,6 +147,7 @@ public class Game extends Canvas implements Runnable {
                 handler.getLst().clear();
                 gameState = STATE.GameOver;
                 AudioPlayer.getMusic("pursuit").stop();
+                AudioPlayer.getMusic("background_music").loop();
             }
         }
         else if (gameState == STATE.GameOver) {
@@ -172,13 +177,28 @@ public class Game extends Canvas implements Runnable {
         graphics.fillRect(0,0,(int)WIDTH,(int)HEIGHT);
 
         handler.render(graphics);
-        if (gameState == STATE.Game) hud.render(graphics);
-        else if (gameState == STATE.Menu || gameState == STATE.Help
-                || gameState == STATE.GameOver
-                || gameState == STATE.Select) menu.render(graphics);
-        else if (gameState == STATE.Pause) pause.render(graphics);
-        else if (gameState == STATE.Shop)
-            shop.render(graphics);
+        if (gameState == STATE.Game) {
+            hud.render(graphics);
+            graphics.setColor(new Color(255,200,100));
+            graphics.setFont(new Font("arial", 5, 50));
+            if (cond && onoffCounter < 50) {
+                graphics.drawString("Blazers On", (int) (WIDTH / 2) - 150, (int) (HEIGHT / 2) - 50);
+                onoffCounter++;
+            }
+            if (gameAmmo == Ammo.Blazer && !cond && onoffCounter < 50) {
+                graphics.drawString("Blazers Off", (int) (WIDTH / 2) - 150, (int) (HEIGHT / 2)-50);
+                onoffCounter++;
+            }
+        }
+        else {
+            graphics.drawImage(spriteSheet,0,0,(int)WIDTH,(int)HEIGHT,null);
+            if (gameState == STATE.Menu || gameState == STATE.Help
+                    || gameState == STATE.GameOver
+                    || gameState == STATE.Select) menu.render(graphics);
+            else if (gameState == STATE.Pause) pause.render(graphics);
+            else if (gameState == STATE.Shop)
+                shop.render(graphics);
+        }
 
         bs.show();
         graphics.dispose();

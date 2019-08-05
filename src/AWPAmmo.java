@@ -8,7 +8,12 @@ public class AWPAmmo extends Ammo {
 
     @Override
     public void render(Graphics g) {
-        g.setColor(new Color(100,200,0));
+        g.setColor(new Color(5,150,150));
         g.fillOval((int) x, (int) y, 14, 14);
+
+        Font font = new Font("AR DARLING",1,11);
+        g.setFont(font);
+        g.setColor(new Color(5,150,150));
+        g.drawString("AWP",(int) x + 3, (int) y - 5);
     }
 }

@@ -2,9 +2,8 @@ import java.awt.*;
 
 public class ShotgunBullet extends Bullet {
 
-    public ShotgunBullet(Game game,float x, float y, float mx, float my, ID id, Handler handler) {
-        super(game,x, y, mx, my, id, handler);
-        super.setSPEED(super.getSPEED() - 2);
+    public ShotgunBullet(Game game,Player player,float x, float y, float mx, float my, ID id, Handler handler) {
+        super(game,player,x, y, mx, my, id, handler,9);
     }
 
     @Override

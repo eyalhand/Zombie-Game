@@ -1,4 +1,7 @@
 import javafx.util.Pair;
+
+import javax.imageio.ImageIO;
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -25,8 +28,10 @@ public class Menu extends MouseAdapter {
         this.hud = hud;
         this.mouseInput = null;
 
-        SpriteSheet spriteSheet1  = new SpriteSheet(Game.spriteSheet);
-        zombieImage = spriteSheet1.grabImage(1,1,(int)game.WIDTH,(int)game.HEIGHT);
+        //SpriteSheet spriteSheet1  = new SpriteSheet(Game.spriteSheet);
+        //zombieImage = spriteSheet1.grabImage(1,1,(int)game.WIDTH,(int)game.HEIGHT);
+
+
 
         startPositionsX[0] = (float) r.nextInt(10) * -1;
         startPositionsX[1] = (float) Math.random()*11 + (int)game.WIDTH;
@@ -123,7 +128,7 @@ public class Menu extends MouseAdapter {
             if (mouseOver(mx, my, 220, 360, 130, 48)) {
 
                 game.setGameState(Game.STATE.Menu);
-                AudioPlayer.getMusic("background_music").loop();
+                //AudioPlayer.getMusic("background_music").loop();
 
                 newGame();
                 handler.getLst().clear();
@@ -275,5 +280,6 @@ public class Menu extends MouseAdapter {
         handler.speed = 5;
         handler.getLst().clear();
         game.setGameAmmo(Game.Ammo.Pistol);
+        game.setCond();
     }
 }

@@ -6,7 +6,7 @@ public class Player extends GameObject {
     private Handler handler;
 
     private static int ammo = 0;
-    private static int grenades = 0;
+    private static int Blazers = 0;
 
     public Player(float x, float y, ID id, Handler handler,Game game) {
         super(x, y, id);
@@ -31,11 +31,21 @@ public class Player extends GameObject {
         else g.setColor(Color.white);
         g.fillOval((int)x,(int)y,32,32);
 
-        g.setColor(Color.white);
+        Color c,c2;
+        if (game.getCond()) {
+            c = Color.gray;
+            c2 = Color.white;
+        }
+        else {
+            c2 = Color.gray;
+            c = Color.white;
+        }
+        g.setColor(c);
         g.setFont(new Font("arial",8,13));
         g.drawString("Ammo: " + ammo, 15, 94);
-        if (game.getGameAmmo() == Game.Ammo.grenade) {
-            g.drawString("Grenades: " + grenades, 15, 110);
+        if (game.getGameAmmo() == Game.Ammo.Blazer) {
+            g.setColor(c2);
+            g.drawString("Blazers: " + Blazers, 15, 110);
         }
         g.drawString("(" + game.getGameAmmo() + ")", 15, 125);
     }
@@ -61,9 +71,9 @@ public class Player extends GameObject {
 
     public static void setAmmu(int inc) { ammo += inc; }
 
-    public static int getGrenades() { return grenades; }
+    public static int getBlazers() { return Blazers; }
 
-    public static void setGrenades(int inc) { grenades += inc; }
+    public static void setBlazers(int inc) { Blazers += inc; }
 
     private void ammoCollision(GameObject tempObject) {
         if (game.getGameAmmo() == Game.Ammo.Pistol) {
@@ -108,11 +118,11 @@ public class Player extends GameObject {
                 handler.removeObject(tempObject);
             }
         }
-        else if (game.getGameAmmo() == Game.Ammo.grenade) {
+        else if (game.getGameAmmo() == Game.Ammo.Blazer) {
             if (getBounds().intersects(tempObject.getBounds())) {
-                if (game.getCond()) {
-                    //Grenade code
-                    grenades += 5;
+                if (game.getCond() && tempObject instanceof BlazersAmmo) {
+                    //BlazersBullet code
+                    Blazers += 2;
                     handler.removeObject(tempObject);
                 }
                 else {
@@ -123,5 +133,5 @@ public class Player extends GameObject {
             }
         }
     }
-    public void initialize() { ammo = 0; grenades = 0; }
+    public void initialize() { ammo = 0; Blazers = 0; }
 }

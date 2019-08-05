@@ -106,39 +106,44 @@ public class Spawn {
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.Shotgun) {
-            spawnBulletCollector = r.nextInt(240);
+            spawnBulletCollector = r.nextInt(300);
             if (spawnBulletCollector == 0) {
                 handler.addObject(new ShotgunAmmo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.Uzi) {
-            spawnBulletCollector = r.nextInt(300);
+            spawnBulletCollector = r.nextInt(250);
             if (spawnBulletCollector == 0) {
                 handler.addObject(new UziAmmo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.AK47) {
-            spawnBulletCollector = r.nextInt(250);
+            spawnBulletCollector = r.nextInt(300);
             if (spawnBulletCollector == 0) {
                 handler.addObject(new AK47Ammo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.Negev) {
-            spawnBulletCollector = r.nextInt(250);
+            spawnBulletCollector = r.nextInt(300);
             if (spawnBulletCollector == 0) {
                 handler.addObject(new NegevAmmo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.AWP) {
-            spawnBulletCollector = r.nextInt(250);
+            spawnBulletCollector = r.nextInt(320);
             if (spawnBulletCollector == 0) {
                 handler.addObject(new AWPAmmo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
             }
         }
-        else if (game.getGameAmmo() == Game.Ammo.grenade) {
-            spawnBulletCollector = r.nextInt(300);
+        else if (game.getGameAmmo() == Game.Ammo.Blazer) {
+            spawnBulletCollector = r.nextInt(320);
+            int spawnBulletCollector2 = r.nextInt(650);
             if (spawnBulletCollector == 0) {
-                handler.addObject(new GrenadeAmmo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
+                handler.addObject(new AWPAmmo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
+            }
+            if (spawnBulletCollector2 == 0) {
+                handler.addObject(new BlazersAmmo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
+
             }
         }
     }

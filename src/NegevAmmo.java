@@ -12,5 +12,10 @@ public class NegevAmmo extends Ammo {
         g.fillOval((int) x, (int) y, 12, 12);
         g.fillOval((int) x + 6, (int) y + 6, 12, 12);
         g.fillOval((int) x + 12, (int) y + 12, 12, 12);
+
+        Font font = new Font("AR DARLING",1,11);
+        g.setFont(font);
+        g.setColor(new Color(180,60,0));
+        g.drawString("Negev",(int) x + 3, (int) y - 5);
     }
 }

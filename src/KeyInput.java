@@ -10,7 +10,6 @@ public class KeyInput extends KeyAdapter {
     private Shop shop;
 
     private boolean[] keyDown = new boolean[4];
-    private boolean[] keyDown2 = new boolean[4];
 
     public KeyInput(Handler handler, Game game,Pause pause,Shop shop){
         this.handler = handler;
@@ -20,7 +19,6 @@ public class KeyInput extends KeyAdapter {
 
         for (int i = 0; i < 4; i++) {
             keyDown[i] = false;
-            keyDown2[i] = false;
         }
     }
 
@@ -80,9 +78,9 @@ public class KeyInput extends KeyAdapter {
                 }
             }
         }
-        if (key == KeyEvent.VK_G) {
+        if (game.getGameAmmo() == Game.Ammo.Blazer && key == KeyEvent.VK_G) {
             game.setCond();
-
+            game.onoffCounter = 0;
         }
     }
 
