@@ -9,7 +9,7 @@ public class Shop extends MouseAdapter {
     private HUD hud;
     private Game game;
 
-    private LinkedList<GameObject> temporary = new LinkedList<>();//a list of Game Objects that is currently on the game.
+    private LinkedList<GameObject> temporary = new LinkedList<>(); //a list of Game Objects that is currently on the game.
 
     private static int B1,B1Counter;
     private static int B2,B2Counter;
@@ -42,7 +42,7 @@ public class Shop extends MouseAdapter {
 
         if (game.getGameState() == Game.STATE.Shop) {
             //item 1
-            if (mouseOver(mx, my, 85, 130, 190, 20)) {
+            if (mouseOver(mx, my, 385, 270, 780, 42)) {
                 B1Counter++;
                 if (hud.getScore() >= B1 && B1Counter <= 6) {
                     hud.setScore(hud.getScore() - B1);
@@ -52,9 +52,9 @@ public class Shop extends MouseAdapter {
                 }
             }
             //item 2
-            if (mouseOver(mx, my, 85, 180, 210, 20)) {
+            if (mouseOver(mx, my, 385, 340, 780, 42)) {
                 B2Counter++;
-                if (hud.getScore() >= B2 && B2Counter <= 8) {
+                if (hud.getScore() >= B2 && B2Counter <= 6) {
                     hud.setScore(hud.getScore() - B2);
                     B2 += B2;
                     if (game.getGameAmmo() == Game.Ammo.Pistol) {
@@ -78,7 +78,7 @@ public class Shop extends MouseAdapter {
                 }
             }
             //item 3
-            if (mouseOver(mx, my, 85, 230, 190, 20)) {
+            if (mouseOver(mx, my, 385, 410, 780, 42)) {
                 if (hud.getScore() >= B3) {
                     hud.setScore(hud.getScore() - B3);
                     B3 += B3;
@@ -86,7 +86,7 @@ public class Shop extends MouseAdapter {
                 }
             }
             //item 4
-            if (mouseOver(mx, my, 85, 280, 190, 20)) {
+            if (mouseOver(mx, my, 385, 480, 780, 42)) {
                 B4Counter++;
                 if (hud.getScore() >= B4 && B4Counter <= 4) {
                     hud.setScore(hud.getScore() - B4);
@@ -94,7 +94,7 @@ public class Shop extends MouseAdapter {
                     handler.speed++;
                 }
             }
-            if (mouseOver(mx, my, 85, 330, 190, 20)) {
+            if (mouseOver(mx, my, 385, 550, 780, 42)) {
                 if (hud.getScore() >= B5) {
                     hud.setScore(hud.getScore() - B5);
                     B5 += B5;
@@ -112,59 +112,58 @@ public class Shop extends MouseAdapter {
     }
 
     public void render(Graphics g) {
-        Font font = new Font("AR DARLING", 1, 50);
-        Font font2 = new Font("AR DARLING", 1, 25);
+        Font font = new Font("AR DARLING", 1, 135);
+        Font font2 = new Font("AR DARLING", 1, 50);
         boolean more;
 
         g.setFont(font);
-        g.setColor(Color.red);
-        g.drawString("Shop", 240, 65);
+        g.setColor(Color.ORANGE);
+        g.drawString("Shop", (int)game.WIDTH/2 - 155, 120);
 
         //item 1
         g.setFont(font2);
-        more = color(B1,g,B1Counter,5,100,150);
+        more = color(B1,g,B1Counter,6,385,300);
         if (more == true) {
-            g.drawString("Upgrade Health", 100, 150);
+            g.drawString("Upgrade Health", 385, 300);
+            g.drawString("Cost: " + B1 + "yal's", 800, 300);
         }
-        g.drawString("Cost: " + B1 + "yal's", 320, 150);
 
         //item 2
-        more = color(B2,g,B2Counter,5,100,200);
+        more = color(B2,g,B2Counter,5,385,370);
         if (more == true) {
             if (B2 == 5) {
-                g.drawString("Unlock grenades", 100, 200);
+                g.drawString("Unlock Blazers", 385, 370);
+            } else {
+                g.drawString("Upgrade Weapon", 385, 370);
             }
-            else {
-                g.drawString("Upgrade Weapon", 100, 200);
-            }
+            g.drawString("Cost: " + B2 + "yal's", 800, 370);
         }
-        g.drawString("Cost: " + B2 + "yal's", 320, 200);
 
         //item 3
-        more = color(B3,g,B2Counter,0,100,250);
+        more = color(B3,g,B2Counter,0,385,440);
         if (more == true) {
-            g.drawString("Refill Health", 100, 250);
+            g.drawString("Refill Health", 385, 440);
+            g.drawString("Cost: " + B3 + "yal's", 800, 440);
         }
-        g.drawString("Cost: " + B3 + "yal's", 320, 250);
 
         //item 4
-        more = color(B4,g,B4Counter,4,100,300);
+        more = color(B4,g,B4Counter,4,385,510);
         if (more == true) {
-            g.drawString("Upgrade Speed", 100, 300);
+            g.drawString("Upgrade Speed", 385, 510);
+            g.drawString("Cost: " + B4 + "yal's", 800, 510);
         }
-        g.drawString("Cost: " + B4 + "yal's", 320, 300);
 
         //item 5
-        more = color(B5,g,B2Counter,0,100,350);
+        more = color(B5,g,B2Counter,0,385,580);
         if (more == true) {
-            g.drawString("Buy 50 Bullets", 100, 350);
+            g.drawString("Buy 50 Bullets", 385, 580);
+            g.drawString("Cost: " + B5 + "yal's", 800, 580);
         }
-        g.drawString("Cost: " + B5 + "yal's", 320, 350);
 
-        g.setFont(new Font("Stencil",1,16));
-        g.setColor(Color.green);
-        g.drawString("Score: " + hud.getScore() + "yal's", 220, 90);
-        g.drawString("(Press Space To Go Back)",190,400);
+        g.setFont(new Font("Stencil",1,25));
+        g.setColor(Color.yellow);
+        g.drawString("Score: " + hud.getScore() + "yal's", (int)game.WIDTH/2 - 100, 150);
+        g.drawString("(Press Space To Resume Game)",(int)game.WIDTH/2 - 210,200);
     }
 
     public void tick() {
@@ -179,23 +178,23 @@ public class Shop extends MouseAdapter {
     private boolean color(int B,Graphics g,int counter,int limit,int x, int y) {
         if (B == B3 || B == B5) {
             if (hud.getScore() >= B)
-                g.setColor(Color.white);
+                g.setColor(new Color(0,150,255));
             else
-                g.setColor(Color.gray);
+                g.setColor(Color.black);
         }
         else {
             if (counter <= limit) {
                 if (hud.getScore() >= B) {
-                    g.setColor(Color.white);
+                    g.setColor(new Color(0,150,255));
                     return true;
                 }
                 else {
-                    g.setColor(Color.gray);
+                    g.setColor(Color.black);
                     return true;
                 }
             }
             else {
-                g.setColor(Color.gray);
+                g.setColor(Color.black);
                 g.drawString("No More Upgrades", x, y);
                 return false;
             }

@@ -13,7 +13,7 @@ public class UziAmmo extends Ammo {
         g.fillOval((int) x + 6, (int) y + 6, 10, 10);
         g.fillOval((int) x + 12, (int) y + 12, 10, 10);
 
-        Font font = new Font("AR DARLING",1,11);
+        Font font = new Font("AR DARLING",1,14);
         g.setFont(font);
         g.setColor(new Color(10,100,50));
         g.drawString("Uzi",(int) x + 3, (int) y - 5);

@@ -10,7 +10,7 @@ public class Game extends Canvas implements Runnable {
 
     Toolkit toolkit = Toolkit.getDefaultToolkit();
 
-    public double WIDTH = toolkit.getScreenSize().getWidth(), HEIGHT = toolkit.getScreenSize().getHeight();
+    public double WIDTH = toolkit.getScreenSize().getWidth() + 10, HEIGHT = toolkit.getScreenSize().getHeight() + 10;
     private String title = "Zombies Attack";
 
     private Thread thread;
@@ -56,6 +56,7 @@ public class Game extends Canvas implements Runnable {
     private boolean cond = false;
     public int onoffCounter = 0;
     public static BufferedImage spriteSheet;
+    public static BufferedImage shopImg;
 
     public Game() throws SlickException, IOException {
         init();
@@ -71,6 +72,7 @@ public class Game extends Canvas implements Runnable {
         //BufferedImageLoader loader = new BufferedImageLoader();
         //spriteSheet = loader.loadImage("/res/d.jpg");
         spriteSheet = ImageIO.read(getClass().getResource("/res/z.jpg"));
+        shopImg = ImageIO.read(getClass().getResource("/res/shopImg.jpg"));
 
         spawner = null;
         mouseInput = null;
@@ -196,8 +198,10 @@ public class Game extends Canvas implements Runnable {
                     || gameState == STATE.GameOver
                     || gameState == STATE.Select) menu.render(graphics);
             else if (gameState == STATE.Pause) pause.render(graphics);
-            else if (gameState == STATE.Shop)
+            else if (gameState == STATE.Shop) {
+                graphics.drawImage(shopImg, 0, 0, (int) WIDTH, (int) HEIGHT, null);
                 shop.render(graphics);
+            }
         }
 
         bs.show();
@@ -219,7 +223,7 @@ public class Game extends Canvas implements Runnable {
 
     public boolean getCond() { return cond; }
 
-    public void setCond() { cond = !cond; }
+    public void setCond(boolean b) { cond = b; }
 
     public void setSpawner(Spawn spawner) { this.spawner = spawner; }
 

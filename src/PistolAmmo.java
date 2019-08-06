@@ -11,7 +11,7 @@ public class PistolAmmo extends Ammo {
         g.setColor(new Color(100,0,200));
         g.fillOval((int) x, (int) y, 13, 13);
 
-        Font font = new Font("AR DARLING",1,11);
+        Font font = new Font("AR DARLING",1,14);
         g.setFont(font);
         g.setColor(new Color(100,0,200));
         g.drawString("Pistol",(int) x + 3, (int) y - 5);

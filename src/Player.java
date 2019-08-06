@@ -120,7 +120,7 @@ public class Player extends GameObject {
         }
         else if (game.getGameAmmo() == Game.Ammo.Blazer) {
             if (getBounds().intersects(tempObject.getBounds())) {
-                if (game.getCond() && tempObject instanceof BlazersAmmo) {
+                if (tempObject instanceof BlazersAmmo) {
                     //BlazersBullet code
                     Blazers += 2;
                     handler.removeObject(tempObject);

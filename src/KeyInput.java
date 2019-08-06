@@ -61,25 +61,28 @@ public class KeyInput extends KeyAdapter {
                     handler.getLst().add(tempObject);
                 }
             }
-            else
+            else if (game.getGameState() == Game.STATE.Menu)
                 System.exit(0);
         }
-        if (key == KeyEvent.VK_SPACE) {
+        else if (key == KeyEvent.VK_SPACE) {
             if (game.getGameState() == Game.STATE.Game) {
                 shop.getTemporary().clear();
                 game.setGameState(Game.STATE.Shop);
-            }
-            else if (game.getGameState() == Game.STATE.Shop) {
+                AudioPlayer.getMusic("pursuit").stop();
+                AudioPlayer.getMusic("shop_music").loop();
+            } else if (game.getGameState() == Game.STATE.Shop) {
                 game.setGameState(Game.STATE.Game);
                 LinkedList<GameObject> temp = shop.getTemporary();
                 for (int i = 0; i < temp.size(); i++) {
                     GameObject tempObject = temp.get(i);
                     handler.getLst().add(tempObject);
                 }
+                AudioPlayer.getMusic("shop_music").stop();
+                AudioPlayer.getMusic("pause").loop();
             }
         }
-        if (game.getGameAmmo() == Game.Ammo.Blazer && key == KeyEvent.VK_G) {
-            game.setCond();
+        else if (game.getGameAmmo() == Game.Ammo.Blazer && key == KeyEvent.VK_G) {
+            game.setCond(!game.getCond());
             game.onoffCounter = 0;
         }
     }

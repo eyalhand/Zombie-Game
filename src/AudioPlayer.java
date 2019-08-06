@@ -23,6 +23,8 @@ public class AudioPlayer {
         musicMap.put("pause",new Music("res/pause.ogg"));
         musicMap.put("background_music",new Music("res/background_music.ogg"));
         musicMap.put("pursuit",new Music("res/pursuit.ogg"));
+        musicMap.put("shop_music",new Music("res/shop_music.ogg"));
+        musicMap.put("winner",new Music("res/winner_song.ogg"));
     }
 
     public static Sound getSound(String key) { return soundMap.get(key); }

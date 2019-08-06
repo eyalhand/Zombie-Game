@@ -21,7 +21,7 @@ public class Pause extends MouseAdapter {
 
         if (game.getGameState() == Game.STATE.Pause) {
             //resume button
-            if (mouseOver(mx, my, 50, 100, 160, 48)) {
+            if (mouseOver(mx, my, 110, 210, 230, 50)) {
                 AudioPlayer.getMusic("pause").stop();
                 AudioPlayer.getMusic("pursuit").loop();
 
@@ -32,14 +32,9 @@ public class Pause extends MouseAdapter {
                 MouseInput.setLastState(Game.STATE.Pause);
                 game.setGameState(Game.STATE.Game);
             }
-            //settings button
-            if (mouseOver(mx, my, 50, 170, 185, 48)) {
-                AudioPlayer.getSound("click_sound").play();
 
-
-            }
             //back to main menu button
-            if (mouseOver(mx, my, 320, 350, 300, 48)) {
+            if (mouseOver(mx, my, (int)game.WIDTH - 650, (int)game.HEIGHT - 150, 600, 90)) {
                 AudioPlayer.getMusic("pause").stop();
                 AudioPlayer.getMusic("background_music").loop();
 
@@ -68,23 +63,19 @@ public class Pause extends MouseAdapter {
 
     public void render(Graphics g) {
         if (game.getGameState() == Game.STATE.Pause) {
-            Font font = new Font("AR DARLING", 1, 50);
-            Font font2 = new Font("AR DARLING", 1, 40);
-            Font font3 = new Font("AR DARLING", 1, 30);
+            Font font = new Font("AR DARLING", 1, 135);
+            Font font2 = new Font("AR DARLING", 1, 65);
 
             g.setFont(font);
             g.setColor(Color.green);
-            g.drawString("Pause", 240, 65);
+            g.drawString("Pause", (int)game.WIDTH/2 - 200, 135);
 
             g.setFont(font2);
             g.setColor(Color.white);
-            g.drawString("Resume", 60, 135);
+            g.drawString("Resume", 110, 250);
 
-            g.drawString("Settings", 60, 205);
-
-            g.setFont(font3);
             g.setColor(Color.white);
-            g.drawString("Back to Main Menu", 330, 385);
+            g.drawString("Back to Main Menu", (int)game.WIDTH - 650, (int)game.HEIGHT - 100);
         }
     }
 

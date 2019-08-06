@@ -11,9 +11,9 @@ public class BlazersAmmo extends Ammo {
         g.setColor(new Color(5,150,20));
         g.fillOval((int) x, (int) y, 13, 13);
 
-        Font font = new Font("AR DARLING",1,11);
+        Font font = new Font("AR DARLING",1,14);
         g.setFont(font);
         g.setColor(new Color(5,150,20));
-        g.drawString("Grenades",(int) x + 3, (int) y - 5);
+        g.drawString("Blazers",(int) x + 3, (int) y - 5);
     }
 }

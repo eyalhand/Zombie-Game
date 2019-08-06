@@ -31,7 +31,7 @@ public class MouseInput extends MouseAdapter {
                 }
                 else if (game.getGameAmmo() == Game.Ammo.Shotgun) {
                     handler.addObject(new ShotgunBullet(game,player,player.x + 8, player.y + 8, mx, my, ID.Bullet, handler));
-                    AudioPlayer.getSound("shotgun_reload").play();
+                    AudioPlayer.getSound("shotgun_bullet").play();
                     AudioPlayer.getSound("empty_bullet_shell_fall").play();
                     player.setAmmu(-1);
                 }
