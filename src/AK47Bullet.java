@@ -3,7 +3,7 @@ import java.awt.*;
 public class AK47Bullet extends Bullet {
 
     public AK47Bullet(Game game,Player player,float x, float y, float mx, float my, ID id, Handler handler) {
-        super(game,player,x, y, mx, my, id, handler,10);
+        super(game,player,x, y, mx, my, id, handler,11);
     }
 
     @Override

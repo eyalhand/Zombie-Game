@@ -1,6 +1,9 @@
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
 import java.util.LinkedList;
 
 public class Pause extends MouseAdapter {
@@ -8,11 +11,17 @@ public class Pause extends MouseAdapter {
     private Game game;
     private Handler handler;
 
+    private BufferedImage muteOn;
+    private BufferedImage muteOff;
+
     private LinkedList<GameObject> temporary = new LinkedList<>();//a list of Game Objects that is currently on the game.
 
-    public Pause(Game game,Handler handler) {
+    public Pause(Game game,Handler handler) throws IOException {
         this.game = game;
         this.handler = handler;
+
+        muteOn = ImageIO.read(getClass().getResource("/res/mute_on.svg"));
+        muteOff = ImageIO.read(getClass().getResource("/res/mute_off.jpg"));
     }
 
     public void mousePressed(MouseEvent e) {
@@ -34,7 +43,7 @@ public class Pause extends MouseAdapter {
             }
 
             //back to main menu button
-            if (mouseOver(mx, my, (int)game.WIDTH - 650, (int)game.HEIGHT - 150, 600, 90)) {
+            if (mouseOver(mx, my, (int)game.getWIDTH() - 650, (int)game.getHEIGHT() - 150, 600, 90)) {
                 AudioPlayer.getMusic("pause").stop();
                 AudioPlayer.getMusic("background_music").loop();
 
@@ -68,14 +77,19 @@ public class Pause extends MouseAdapter {
 
             g.setFont(font);
             g.setColor(Color.green);
-            g.drawString("Pause", (int)game.WIDTH/2 - 200, 135);
+            g.drawString("Pause", (int)game.getWIDTH()/2 - 200, 135);
+
+            if (game.isMute())
+                g.drawImage(muteOn,(int)game.getWIDTH() - 70,30,45,45,null);
+            else
+                g.drawImage(muteOff,(int)game.getWIDTH() - 70,30,45,45,null);
 
             g.setFont(font2);
             g.setColor(Color.white);
             g.drawString("Resume", 110, 250);
 
             g.setColor(Color.white);
-            g.drawString("Back to Main Menu", (int)game.WIDTH - 650, (int)game.HEIGHT - 100);
+            g.drawString("Back to Main Menu", (int)game.getWIDTH() - 650, (int)game.getHEIGHT() - 100);
         }
     }
 
@@ -85,7 +99,7 @@ public class Pause extends MouseAdapter {
         HUD.initialize();
         Spawn.initialize();
         Shop.initialize();
-        handler.speed = 5;
+        handler.setSpeed(5);
         handler.getLst().clear();
         game.setGameAmmo(Game.Ammo.Pistol);
     }

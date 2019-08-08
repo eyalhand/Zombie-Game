@@ -21,12 +21,12 @@ public class Spawn {
         initialize();
 
         startPositionsX[0] = (float) r.nextInt(10) * -1;
-        startPositionsX[1] = (float) Math.random()*11 + (int)game.WIDTH;
-        startPositionsX[2] = (float) r.nextInt((int)game.WIDTH);
+        startPositionsX[1] = (float) Math.random()*11 + (int)game.getWIDTH();
+        startPositionsX[2] = (float) r.nextInt((int)game.getWIDTH());
 
         startPositionsY[0] = (float) r.nextInt(10) * -1;
-        startPositionsY[1] = (float) Math.random()*11 + (int)game.HEIGHT;
-        startPositionsY[2] = (float) r.nextInt((int)game.HEIGHT);
+        startPositionsY[1] = (float) Math.random()*11 + (int)game.getHEIGHT();
+        startPositionsY[2] = (float) r.nextInt((int)game.getHEIGHT());
     }
 
     public static void initialize() {
@@ -67,23 +67,13 @@ public class Spawn {
     private Pair<Float,Float> chooseCord(){
         float x = startPositionsX[r.nextInt(3)];
         float y;
-        if (x < (int)game.WIDTH && x > 0) {
+        if (x < (int)game.getWIDTH() && x > 0) {
             y = startPositionsY[r.nextInt(2)];
         } else {
             y = startPositionsY[r.nextInt(3)];
         }
         return new Pair<>(x,y);
     }
-
-    /*private Pair<Float,Float> chooseCord2() {
-        float x = r.nextInt(Game.WIDTH - 48);
-        while (x < player.getX() + 58 && x > player.getX() - 58)
-            x = r.nextInt(Game.WIDTH - 48);
-        float y = r.nextInt(Game.HEIGHT - 48);
-        while (x < player.getX() + 58 && x > player.getX() - 58)
-            y = r.nextInt(Game.HEIGHT - 48);
-        return new Pair<>(x,y);
-    }*/
 
     private int checkAmmo() {
         if (game.getGameAmmo() == Game.Ammo.Pistol)
@@ -102,48 +92,47 @@ public class Spawn {
         if (game.getGameAmmo() == Game.Ammo.Pistol) {
             spawnBulletCollector = r.nextInt(230);
             if (spawnBulletCollector == 0) {
-                handler.addObject(new PistolAmmo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
+                handler.addObject(new PistolAmmo(r.nextInt((int)game.getWIDTH() - 60), r.nextInt((int)game.getHEIGHT() - 60), ID.Ammo, handler));
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.Shotgun) {
             spawnBulletCollector = r.nextInt(300);
             if (spawnBulletCollector == 0) {
-                handler.addObject(new ShotgunAmmo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
+                handler.addObject(new ShotgunAmmo(r.nextInt((int)game.getWIDTH() - 60), r.nextInt((int)game.getHEIGHT() - 60), ID.Ammo, handler));
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.Uzi) {
             spawnBulletCollector = r.nextInt(250);
             if (spawnBulletCollector == 0) {
-                handler.addObject(new UziAmmo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
+                handler.addObject(new UziAmmo(r.nextInt((int)game.getWIDTH() - 60), r.nextInt((int)game.getHEIGHT() - 60), ID.Ammo, handler));
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.AK47) {
             spawnBulletCollector = r.nextInt(300);
             if (spawnBulletCollector == 0) {
-                handler.addObject(new AK47Ammo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
+                handler.addObject(new AK47Ammo(r.nextInt((int)game.getWIDTH() - 60), r.nextInt((int)game.getHEIGHT() - 60), ID.Ammo, handler));
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.Negev) {
             spawnBulletCollector = r.nextInt(300);
             if (spawnBulletCollector == 0) {
-                handler.addObject(new NegevAmmo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
+                handler.addObject(new NegevAmmo(r.nextInt((int)game.getWIDTH() - 60), r.nextInt((int)game.getHEIGHT() - 60), ID.Ammo, handler));
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.AWP) {
             spawnBulletCollector = r.nextInt(320);
             if (spawnBulletCollector == 0) {
-                handler.addObject(new AWPAmmo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
+                handler.addObject(new AWPAmmo(r.nextInt((int)game.getWIDTH() - 60), r.nextInt((int)game.getHEIGHT() - 60), ID.Ammo, handler));
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.Blazer) {
             spawnBulletCollector = r.nextInt(320);
-            int spawnBulletCollector2 = r.nextInt(650);
+            int spawnBulletCollector2 = r.nextInt(300);
             if (spawnBulletCollector == 0) {
-                handler.addObject(new AWPAmmo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
+                handler.addObject(new AWPAmmo(r.nextInt((int)game.getWIDTH() - 60), r.nextInt((int)game.getHEIGHT() - 60), ID.Ammo, handler));
             }
             if (spawnBulletCollector2 == 0) {
-                handler.addObject(new BlazersAmmo(r.nextInt((int)game.WIDTH - 60), r.nextInt((int)game.HEIGHT - 60), ID.Ammo, handler));
-
+                handler.addObject(new BlazersAmmo(r.nextInt((int)game.getWIDTH() - 60), r.nextInt((int)game.getHEIGHT() - 60), ID.Ammo, handler));
             }
         }
     }

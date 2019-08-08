@@ -3,7 +3,7 @@ import java.awt.*;
 public class NegevBullet extends Bullet {
 
     public NegevBullet(Game game,Player player,float x, float y, float mx, float my, ID id, Handler handler) {
-        super(game,player,x, y, mx, my, id, handler,15);
+        super(game,player,x, y, mx, my, id, handler,17);
     }
 
     @Override

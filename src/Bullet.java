@@ -1,6 +1,5 @@
 import javafx.util.Pair;
 import java.awt.*;
-import java.util.Random;
 
 public abstract class Bullet extends GameObject {
 
@@ -8,28 +7,26 @@ public abstract class Bullet extends GameObject {
     private Game game;
     private Player player;
 
-    private float SPEED = 13;
+    private float SPEED;
 
     public Bullet(Game game,Player player,float x, float y, float mx, float my, ID id, Handler handler, float SPEED) {
         super(x, y, id);
         this.handler = handler;
 
+        this.SPEED = SPEED;
+        this.game = game;
+        this.player = player;
+
         this.velX = gunShot(mx,my,x,y).getKey();
         this.velY = gunShot(mx,my,x,y).getValue();
-
-        this.game = game;
-        this.SPEED = SPEED;
-        this.player = player;
     }
 
     @Override
     public void tick() {
-
         x += velX;
         y += velY;
 
-        if (y >= (int)game.HEIGHT || x >= (int)game.WIDTH || x < 0 || y < 0) handler.removeObject(this);
-
+        if (y >= (int)game.getHEIGHT() || x >= (int)game.getWIDTH() || x < 0 || y < 0) handler.removeObject(this);
     }
 
     @Override

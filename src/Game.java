@@ -1,4 +1,6 @@
+import org.newdawn.slick.Music;
 import org.newdawn.slick.SlickException;
+import org.newdawn.slick.Sound;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -10,7 +12,7 @@ public class Game extends Canvas implements Runnable {
 
     Toolkit toolkit = Toolkit.getDefaultToolkit();
 
-    public double WIDTH = toolkit.getScreenSize().getWidth() + 10, HEIGHT = toolkit.getScreenSize().getHeight() + 10;
+    private double WIDTH = toolkit.getScreenSize().getWidth(), HEIGHT = toolkit.getScreenSize().getHeight();
     private String title = "Zombies Attack";
 
     private Thread thread;
@@ -29,6 +31,7 @@ public class Game extends Canvas implements Runnable {
     private Pause pause;
     private MouseInput mouseInput;
     private Shop shop;
+    private Settings settings;
 
     public enum STATE {
         Menu,
@@ -37,7 +40,8 @@ public class Game extends Canvas implements Runnable {
         Game,
         Pause,
         Shop,
-        Select
+        Select,
+        Settings
     }
 
     public enum Ammo {
@@ -50,11 +54,56 @@ public class Game extends Canvas implements Runnable {
         Blazer
     }
 
+    public enum SettingOption {
+        PlayerColors,
+        ZombieColors,
+        Backgrounds,
+        Mode
+    }
+
+    public enum PlayerColor {
+        Blue,
+        Green,
+        Yellow,
+        Black,
+        Gray,
+        Red
+    }
+
+    public enum ZombieColor {
+        Blue,
+        Green,
+        Yellow,
+        Purple,
+        White,
+        Red
+    }
+
+    public enum Background {
+        Background1,
+        Background2,
+        Background3,
+        Background4
+    }
+
+    public enum Mode {
+        Regular,
+        MaxDamage,
+        Unknown
+    }
+
     private STATE gameState = STATE.Menu;
     private Ammo gameAmmo = Ammo.Pistol;
+    private SettingOption settingOption = SettingOption.PlayerColors;
+    private PlayerColor playerColor = PlayerColor.Blue;
+    private ZombieColor zombieColor = ZombieColor.Green;
+    private Background background = Background.Background1;
+    private Mode mode = Mode.Regular;
 
     private boolean cond = false;
-    public int onoffCounter = 0;
+    private boolean mute = false;
+    private int onoffCounter = 0;
+
     public static BufferedImage spriteSheet;
     public static BufferedImage shopImg;
 
@@ -69,8 +118,7 @@ public class Game extends Canvas implements Runnable {
     private void init() throws SlickException, IOException {
         AudioPlayer.load();
         AudioPlayer.getMusic("background_music").loop();
-        //BufferedImageLoader loader = new BufferedImageLoader();
-        //spriteSheet = loader.loadImage("/res/d.jpg");
+
         spriteSheet = ImageIO.read(getClass().getResource("/res/z.jpg"));
         shopImg = ImageIO.read(getClass().getResource("/res/shopImg.jpg"));
 
@@ -81,9 +129,11 @@ public class Game extends Canvas implements Runnable {
         shop = new Shop(handler,hud,this);
         menu = new Menu(this,handler,hud);
         pause = new Pause(this,handler);
+        settings = new Settings(this);
         this.addMouseListener(menu);
         this.addMouseListener(pause);
         this.addMouseListener(shop);
+        this.addMouseListener(settings);
         this.addKeyListener(new KeyInput(handler,this,pause,shop));
     }
 
@@ -128,7 +178,11 @@ public class Game extends Canvas implements Runnable {
                 delta--;
             }
 
-            render();
+            try {
+                render();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             frames++;
 
             if (System.currentTimeMillis() - timer > 1000) {
@@ -148,8 +202,10 @@ public class Game extends Canvas implements Runnable {
             if (HUD.Health == 0) {
                 handler.getLst().clear();
                 gameState = STATE.GameOver;
-                AudioPlayer.getMusic("pursuit").stop();
-                AudioPlayer.getMusic("background_music").loop();
+                if (!mute) {
+                    AudioPlayer.getMusic("pursuit").stop();
+                    AudioPlayer.getMusic("background_music").loop();
+                }
             }
         }
         else if (gameState == STATE.GameOver) {
@@ -162,9 +218,23 @@ public class Game extends Canvas implements Runnable {
             pause.tick();
         else if (gameState == STATE.Shop)
             shop.tick();
+
+        if (mute)
+            AudioPlayer.getMusic("background_music").stop();
     }
 
-    private void render(){
+    /*private void mute() {
+        if (mute) {
+            for(Sound s: AudioPlayer.soundMap.values()) {
+                s.stop();
+            }
+            for(Music m: AudioPlayer.musicMap.values()) {
+                m.stop();
+            }
+        }
+    }*/
+
+    private void render() throws IOException {
         //renders the game
         BufferStrategy bs = this.getBufferStrategy();
 
@@ -176,24 +246,32 @@ public class Game extends Canvas implements Runnable {
         Graphics graphics = bs.getDrawGraphics();
 
         graphics.setColor(Color.black);
-        graphics.fillRect(0,0,(int)WIDTH,(int)HEIGHT);
+        graphics.fillRect(0, 0, (int) WIDTH, (int) HEIGHT);
 
-        handler.render(graphics);
         if (gameState == STATE.Game) {
+            if (background == Background.Background1)
+                graphics.drawImage(ImageIO.read(getClass().getResource("/res/stage1.jpg")), 0, 0, (int) WIDTH, (int) HEIGHT, null);
+            else if (background == Background.Background2)
+                graphics.drawImage(ImageIO.read(getClass().getResource("/res/stage2.jpg")), 0, 0, (int) WIDTH, (int) HEIGHT, null);
+            else if (background == Background.Background3)
+                graphics.drawImage(ImageIO.read(getClass().getResource("/res/stage3.jpg")), 0, 0, (int) WIDTH, (int) HEIGHT, null);
+            else
+                graphics.drawImage(ImageIO.read(getClass().getResource("/res/stage4.png")), 0, 0, (int) WIDTH, (int) HEIGHT, null);
+
+            handler.render(graphics);
             hud.render(graphics);
-            graphics.setColor(new Color(255,200,100));
+            graphics.setColor(new Color(255, 200, 100));
             graphics.setFont(new Font("arial", 5, 50));
             if (cond && onoffCounter < 50) {
                 graphics.drawString("Blazers On", (int) (WIDTH / 2) - 150, (int) (HEIGHT / 2) - 50);
                 onoffCounter++;
             }
             if (gameAmmo == Ammo.Blazer && !cond && onoffCounter < 50) {
-                graphics.drawString("Blazers Off", (int) (WIDTH / 2) - 150, (int) (HEIGHT / 2)-50);
+                graphics.drawString("Blazers Off", (int) (WIDTH / 2) - 150, (int) (HEIGHT / 2) - 50);
                 onoffCounter++;
             }
-        }
-        else {
-            graphics.drawImage(spriteSheet,0,0,(int)WIDTH,(int)HEIGHT,null);
+        } else {
+            graphics.drawImage(spriteSheet, 0, 0, (int) WIDTH, (int) HEIGHT, null);
             if (gameState == STATE.Menu || gameState == STATE.Help
                     || gameState == STATE.GameOver
                     || gameState == STATE.Select) menu.render(graphics);
@@ -201,7 +279,7 @@ public class Game extends Canvas implements Runnable {
             else if (gameState == STATE.Shop) {
                 graphics.drawImage(shopImg, 0, 0, (int) WIDTH, (int) HEIGHT, null);
                 shop.render(graphics);
-            }
+            } else if (gameState == STATE.Settings) settings.render(graphics);
         }
 
         bs.show();
@@ -221,9 +299,37 @@ public class Game extends Canvas implements Runnable {
 
     public double getHEIGHT() { return HEIGHT; }
 
+    public boolean isMute() { return mute; }
+
+    public void setMute(boolean m) { mute = m; }
+
+    public int getOnoffCounter() { return onoffCounter; }
+
+    public void setOnoffCounter(int x) { onoffCounter = x; }
+
     public boolean getCond() { return cond; }
 
     public void setCond(boolean b) { cond = b; }
+
+    public SettingOption getSettingOption() { return settingOption; }
+
+    public void setSettingOption(SettingOption x) { settingOption = x; }
+
+    public PlayerColor getPlayerColor() { return playerColor; }
+
+    public void setPlayerColor(PlayerColor c) { playerColor = c; }
+
+    public ZombieColor getZombieColor() { return zombieColor; }
+
+    public void setZombieColor(ZombieColor c) { zombieColor = c; }
+
+    public Background getBackgrounD() { return background; }
+
+    public void setBackground(Background b) { background = b; }
+
+    public Mode getMode() { return mode; }
+
+    public void setMode(Mode m) { mode = m; }
 
     public void setSpawner(Spawn spawner) { this.spawner = spawner; }
 

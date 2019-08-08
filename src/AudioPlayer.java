@@ -13,7 +13,7 @@ public class AudioPlayer {
         soundMap.put("zombie_death",new Sound("res/zombie_death.wav"));
         soundMap.put("zombie_come_here",new Sound("res/zombie_come_here.wav"));
         soundMap.put("pistol_bullet",new Sound("res/pistol_bullet.wav"));
-        soundMap.put("shotgun",new Sound("res/shotgun_bullet.wav"));
+        soundMap.put("shotgun_bullet",new Sound("res/shotgun_bullet.wav"));
         soundMap.put("AK47_bullet",new Sound("res/AK47_bullet.wav"));
         soundMap.put("AWP_bullet",new Sound("res/AWP_bullet.wav"));
         soundMap.put("negev_bullet",new Sound("res/negev_bullet.wav"));
@@ -24,7 +24,6 @@ public class AudioPlayer {
         musicMap.put("background_music",new Music("res/background_music.ogg"));
         musicMap.put("pursuit",new Music("res/pursuit.ogg"));
         musicMap.put("shop_music",new Music("res/shop_music.ogg"));
-        musicMap.put("winner",new Music("res/winner_song.ogg"));
     }
 
     public static Sound getSound(String key) { return soundMap.get(key); }

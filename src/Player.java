@@ -19,29 +19,40 @@ public class Player extends GameObject {
         x += velX;
         y += velY;
 
-        x = Game.clamp(x,0,(int)game.WIDTH - 50);
-        y = Game.clamp(y,0,(int)game.HEIGHT - 70);
+        x = Game.clamp(x,0,(int)game.getWIDTH() - 50);
+        y = Game.clamp(y,0,(int)game.getHEIGHT() - 70);
 
         collision();
     }
 
     @Override
     public void render(Graphics g) {
-       if (id == ID.Player) g.setColor(Color.blue);
-        else g.setColor(Color.white);
-        g.fillOval((int)x,(int)y,32,32);
+        if (game.getPlayerColor() == Game.PlayerColor.Blue)
+            g.setColor(Color.BLUE);
+        else if (game.getPlayerColor() == Game.PlayerColor.Yellow)
+            g.setColor(Color.YELLOW);
+        else if (game.getPlayerColor() == Game.PlayerColor.Gray)
+            g.setColor(Color.GRAY);
+        else if (game.getPlayerColor() == Game.PlayerColor.Green)
+            g.setColor(Color.GREEN);
+        else if (game.getPlayerColor() == Game.PlayerColor.Black)
+            g.setColor(Color.BLACK);
+        else
+            g.setColor(Color.RED);
 
-        Color c,c2;
+        g.fillOval((int) x, (int) y, 32, 32);
+
+        Color c, c2;
         if (game.getCond()) {
             c = Color.gray;
             c2 = Color.white;
-        }
-        else {
+        } else {
             c2 = Color.gray;
             c = Color.white;
         }
         g.setColor(c);
-        g.setFont(new Font("arial",8,13));
+
+        g.setFont(new Font("arial", 8, 13));
         g.drawString("Ammo: " + ammo, 15, 94);
         if (game.getGameAmmo() == Game.Ammo.Blazer) {
             g.setColor(c2);
@@ -66,14 +77,6 @@ public class Player extends GameObject {
             }
         }
     }
-
-    public static int getAmmo() { return ammo; }
-
-    public static void setAmmu(int inc) { ammo += inc; }
-
-    public static int getBlazers() { return Blazers; }
-
-    public static void setBlazers(int inc) { Blazers += inc; }
 
     private void ammoCollision(GameObject tempObject) {
         if (game.getGameAmmo() == Game.Ammo.Pistol) {
@@ -134,4 +137,12 @@ public class Player extends GameObject {
         }
     }
     public void initialize() { ammo = 0; Blazers = 0; }
+
+    public static int getAmmo() { return ammo; }
+
+    public static void setAmmu(int inc) { ammo += inc; }
+
+    public static int getBlazers() { return Blazers; }
+
+    public static void setBlazers(int inc) { Blazers += inc; }
 }

@@ -21,7 +21,8 @@ public abstract class Zombie extends GameObject {
                         //collision code
                         health -= changeOfHealth + 8;
                         if (health <= 0) {
-                            AudioPlayer.getSound("zombie_death").play();
+                            if (!game.isMute())
+                                AudioPlayer.getSound("zombie_death").play();
                             HUD.score += 100;
                             HUD.zombiesKilled++;
                             handler.removeObject(this);
@@ -32,7 +33,8 @@ public abstract class Zombie extends GameObject {
                         handler.removeObject(tempObject);
                         health -= changeOfHealth + AD;
                         if (health <= 0) {
-                            AudioPlayer.getSound("zombie_death").play();
+                            if (!game.isMute())
+                                AudioPlayer.getSound("zombie_death").play();
                             HUD.score += 100;
                             HUD.zombiesKilled++;
                             handler.removeObject(this);
@@ -46,10 +48,9 @@ public abstract class Zombie extends GameObject {
 
     public void comeHere(){
         Random r = new Random();
-        int i = r.nextInt(10000);
+        int i = r.nextInt(6000);
         if (i == 0) {
             AudioPlayer.getSound("zombie_come_here").play();
         }
     }
-
 }

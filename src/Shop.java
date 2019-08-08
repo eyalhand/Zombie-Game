@@ -91,7 +91,7 @@ public class Shop extends MouseAdapter {
                 if (hud.getScore() >= B4 && B4Counter <= 4) {
                     hud.setScore(hud.getScore() - B4);
                     B4 += B4;
-                    handler.speed++;
+                    handler.setSpeed(handler.getSpeed()+1);
                 }
             }
             if (mouseOver(mx, my, 385, 550, 780, 42)) {
@@ -118,7 +118,7 @@ public class Shop extends MouseAdapter {
 
         g.setFont(font);
         g.setColor(Color.ORANGE);
-        g.drawString("Shop", (int)game.WIDTH/2 - 155, 120);
+        g.drawString("Shop", (int)game.getWIDTH()/2 - 155, 120);
 
         //item 1
         g.setFont(font2);
@@ -162,8 +162,8 @@ public class Shop extends MouseAdapter {
 
         g.setFont(new Font("Stencil",1,25));
         g.setColor(Color.yellow);
-        g.drawString("Score: " + hud.getScore() + "yal's", (int)game.WIDTH/2 - 100, 150);
-        g.drawString("(Press Space To Resume Game)",(int)game.WIDTH/2 - 210,200);
+        g.drawString("Score: " + hud.getScore() + "yal's", (int)game.getWIDTH()/2 - 100, 150);
+        g.drawString("(Press Space To Resume Game)",(int)game.getWIDTH()/2 - 210,200);
     }
 
     public void tick() {

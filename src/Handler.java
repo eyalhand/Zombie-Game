@@ -3,7 +3,7 @@ import java.util.LinkedList;
 
 public class Handler {
 
-    public int speed = 5;
+    private int speed = 5;
     private LinkedList<GameObject> lst = new LinkedList<>();
 
     public void tick(){
@@ -38,6 +38,10 @@ public class Handler {
         }
         return null;
     }
+
+    public int getSpeed() { return speed; }
+
+    public void setSpeed(int s) { speed = s; }
 
     public void addObject(GameObject object) {
         lst.add(object);

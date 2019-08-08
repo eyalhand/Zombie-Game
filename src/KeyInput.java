@@ -23,53 +23,174 @@ public class KeyInput extends KeyAdapter {
     }
 
     public void keyPressed(KeyEvent e) {
-        int key  = e.getKeyCode();
+        int key = e.getKeyCode();
 
-        for (int i = 0; i < handler.getLst().size(); i++) {
-            GameObject tempObject = handler.getLst().get(i);
-            if (tempObject.getId() == ID.Player) {
-                if (key == KeyEvent.VK_W) {
-                    tempObject.setVelY(-handler.speed);
-                    keyDown[0] = true;
+        if (key == KeyEvent.VK_W) {
+            if (game.getGameState() == Game.STATE.Game) {
+                for (int i = 0; i < handler.getLst().size(); i++) {
+                    GameObject tempObject = handler.getLst().get(i);
+                    if (tempObject.getId() == ID.Player) {
+                        tempObject.setVelY(-handler.getSpeed());
+                        keyDown[0] = true;
+                    }
                 }
-                if (key == KeyEvent.VK_S) { tempObject.setVelY(handler.speed); keyDown[1] = true; }
-                if (key == KeyEvent.VK_D) { tempObject.setVelX(handler.speed); keyDown[2] = true; }
-                if (key == KeyEvent.VK_A) { tempObject.setVelX(-handler.speed); keyDown[3] = true; }
+            } else if (game.getGameState() == Game.STATE.Settings) {
+                if (game.getSettingOption() == Game.SettingOption.PlayerColors)
+                    game.setSettingOption(Game.SettingOption.Mode);
+                else if (game.getSettingOption() == Game.SettingOption.ZombieColors)
+                    game.setSettingOption(Game.SettingOption.PlayerColors);
+                else if (game.getSettingOption() == Game.SettingOption.Backgrounds)
+                    game.setSettingOption(Game.SettingOption.ZombieColors);
+                else
+                    game.setSettingOption(Game.SettingOption.Backgrounds);
             }
-        }
-        if (key == KeyEvent.VK_ESCAPE) {
+        } else if (key == KeyEvent.VK_S) {
+            if (game.getGameState() == Game.STATE.Game) {
+                for (int i = 0; i < handler.getLst().size(); i++) {
+                    GameObject tempObject = handler.getLst().get(i);
+                    if (tempObject.getId() == ID.Player) {
+                        tempObject.setVelY(handler.getSpeed());
+                        keyDown[1] = true;
+                    }
+                }
+            } else if (game.getGameState() == Game.STATE.Settings) {
+                if (game.getSettingOption() == Game.SettingOption.PlayerColors)
+                    game.setSettingOption(Game.SettingOption.ZombieColors);
+                else if (game.getSettingOption() == Game.SettingOption.ZombieColors)
+                    game.setSettingOption(Game.SettingOption.Backgrounds);
+                else if (game.getSettingOption() == Game.SettingOption.Backgrounds)
+                    game.setSettingOption(Game.SettingOption.Mode);
+                else
+                    game.setSettingOption(Game.SettingOption.PlayerColors);
+            }
+        } else if (key == KeyEvent.VK_D) {
+            if (game.getGameState() == Game.STATE.Game) {
+                for (int i = 0; i < handler.getLst().size(); i++) {
+                    GameObject tempObject = handler.getLst().get(i);
+                    if (tempObject.getId() == ID.Player) {
+                        tempObject.setVelX(handler.getSpeed());
+                        keyDown[2] = true;
+                    }
+                }
+            } else if (game.getGameState() == Game.STATE.Settings) {
+                if (game.getSettingOption() == Game.SettingOption.PlayerColors) {
+                    if (game.getPlayerColor() == Game.PlayerColor.Blue)
+                        game.setPlayerColor(Game.PlayerColor.Green);
+                    else if (game.getPlayerColor() == Game.PlayerColor.Green)
+                        game.setPlayerColor(Game.PlayerColor.Yellow);
+                    else if (game.getPlayerColor() == Game.PlayerColor.Yellow)
+                        game.setPlayerColor(Game.PlayerColor.Black);
+                    else if (game.getPlayerColor() == Game.PlayerColor.Black)
+                        game.setPlayerColor(Game.PlayerColor.Gray);
+                    else if (game.getPlayerColor() == Game.PlayerColor.Gray)
+                        game.setPlayerColor(Game.PlayerColor.Red);
+                    else
+                        game.setPlayerColor(Game.PlayerColor.Blue);
+                } else if (game.getSettingOption() == Game.SettingOption.ZombieColors) {
+                    if (game.getZombieColor() == Game.ZombieColor.Blue)
+                        game.setZombieColor(Game.ZombieColor.Green);
+                    else if (game.getZombieColor() == Game.ZombieColor.Green)
+                        game.setZombieColor(Game.ZombieColor.Yellow);
+                    else if (game.getZombieColor() == Game.ZombieColor.Yellow)
+                        game.setZombieColor(Game.ZombieColor.Purple);
+                    else if (game.getZombieColor() == Game.ZombieColor.Purple)
+                        game.setZombieColor(Game.ZombieColor.White);
+                    else if (game.getZombieColor() == Game.ZombieColor.White)
+                        game.setZombieColor(Game.ZombieColor.Red);
+                    else
+                        game.setZombieColor(Game.ZombieColor.Blue);
+                } else if (game.getSettingOption() == Game.SettingOption.Backgrounds) {
+                    if (game.getBackgrounD() == Game.Background.Background1)
+                        game.setBackground(Game.Background.Background2);
+                    else if (game.getBackgrounD() == Game.Background.Background2)
+                        game.setBackground(Game.Background.Background3);
+                    else if (game.getBackgrounD() == Game.Background.Background3)
+                        game.setBackground(Game.Background.Background4);
+                    else
+                        game.setBackground(Game.Background.Background1);
+                } else {
+                    if (game.getMode() == Game.Mode.Regular)
+                        game.setMode(Game.Mode.MaxDamage);
+                    else if (game.getMode() == Game.Mode.MaxDamage)
+                        game.setMode(Game.Mode.Unknown);
+                    else {
+                        game.setMode(Game.Mode.Regular);
+                    }
+                }
+            }
+        } else if (key == KeyEvent.VK_A) {
+            if (game.getGameState() == Game.STATE.Game) {
+                for (int i = 0; i < handler.getLst().size(); i++) {
+                    GameObject tempObject = handler.getLst().get(i);
+                    if (tempObject.getId() == ID.Player) {
+                        tempObject.setVelX(-handler.getSpeed());
+                        keyDown[3] = true;
+                    }
+                }
+            } else if (game.getGameState() == Game.STATE.Settings) {
+                if (game.getSettingOption() == Game.SettingOption.PlayerColors) {
+                    if (game.getPlayerColor() == Game.PlayerColor.Blue)
+                        game.setPlayerColor(Game.PlayerColor.Red);
+                    else if (game.getPlayerColor() == Game.PlayerColor.Green)
+                        game.setPlayerColor(Game.PlayerColor.Blue);
+                    else if (game.getPlayerColor() == Game.PlayerColor.Yellow)
+                        game.setPlayerColor(Game.PlayerColor.Green);
+                    else if (game.getPlayerColor() == Game.PlayerColor.Black)
+                        game.setPlayerColor(Game.PlayerColor.Yellow);
+                    else if (game.getPlayerColor() == Game.PlayerColor.Gray)
+                        game.setPlayerColor(Game.PlayerColor.Black);
+                    else
+                        game.setPlayerColor(Game.PlayerColor.Gray);
+                } else if (game.getSettingOption() == Game.SettingOption.ZombieColors) {
+                    if (game.getZombieColor() == Game.ZombieColor.Blue)
+                        game.setZombieColor(Game.ZombieColor.Red);
+                    else if (game.getZombieColor() == Game.ZombieColor.Green)
+                        game.setZombieColor(Game.ZombieColor.Blue);
+                    else if (game.getZombieColor() == Game.ZombieColor.Yellow)
+                        game.setZombieColor(Game.ZombieColor.Green);
+                    else if (game.getZombieColor() == Game.ZombieColor.Purple)
+                        game.setZombieColor(Game.ZombieColor.Yellow);
+                    else if (game.getZombieColor() == Game.ZombieColor.White)
+                        game.setZombieColor(Game.ZombieColor.Purple);
+                    else
+                        game.setZombieColor(Game.ZombieColor.White);
+                } else if (game.getSettingOption() == Game.SettingOption.Backgrounds) {
+                    if (game.getBackgrounD() == Game.Background.Background1)
+                        game.setBackground(Game.Background.Background4);
+                    else if (game.getBackgrounD() == Game.Background.Background2)
+                        game.setBackground(Game.Background.Background1);
+                    else if (game.getBackgrounD() == Game.Background.Background3)
+                        game.setBackground(Game.Background.Background2);
+                    else
+                        game.setBackground(Game.Background.Background3);
+                } else {
+                    if (game.getMode() == Game.Mode.Regular)
+                        game.setMode(Game.Mode.Unknown);
+                    else if (game.getMode() == Game.Mode.MaxDamage)
+                        game.setMode(Game.Mode.Regular);
+                    else {
+                        game.setMode(Game.Mode.MaxDamage);
+                    }
+                }
+            }
+        } else if (key == KeyEvent.VK_ESCAPE) {
             if (game.getGameState() == Game.STATE.Game) {
                 game.setGameState(Game.STATE.Pause);
-                AudioPlayer.getMusic("pursuit").stop();
-                AudioPlayer.getMusic("pause").loop();
-            }
-            else if (game.getGameState() == Game.STATE.Pause) {
+                if (!game.isMute()) {
+                    AudioPlayer.getMusic("pursuit").stop();
+                    AudioPlayer.getMusic("pause").loop();
+                }
+            } else if (game.getGameState() == Game.STATE.Pause) {
                 game.setGameState(Game.STATE.Game);
-                AudioPlayer.getMusic("pause").stop();
-                AudioPlayer.getMusic("pursuit").loop();
+                if (!game.isMute()) {
+                    AudioPlayer.getMusic("pause").stop();
+                    AudioPlayer.getMusic("pursuit").loop();
+                }
                 LinkedList<GameObject> temp = pause.getTemporary();
                 for (int i = 0; i < temp.size(); i++) {
                     GameObject tempObject = temp.get(i);
                     handler.getLst().add(tempObject);
                 }
-            }
-            else if (game.getGameState() == Game.STATE.Shop) {
-                game.setGameState(Game.STATE.Game);
-                LinkedList<GameObject> temp = shop.getTemporary();
-                for (int i = 0; i < temp.size(); i++) {
-                    GameObject tempObject = temp.get(i);
-                    handler.getLst().add(tempObject);
-                }
-            }
-            else if (game.getGameState() == Game.STATE.Menu)
-                System.exit(0);
-        }
-        else if (key == KeyEvent.VK_SPACE) {
-            if (game.getGameState() == Game.STATE.Game) {
-                shop.getTemporary().clear();
-                game.setGameState(Game.STATE.Shop);
-                AudioPlayer.getMusic("pursuit").stop();
-                AudioPlayer.getMusic("shop_music").loop();
             } else if (game.getGameState() == Game.STATE.Shop) {
                 game.setGameState(Game.STATE.Game);
                 LinkedList<GameObject> temp = shop.getTemporary();
@@ -77,13 +198,38 @@ public class KeyInput extends KeyAdapter {
                     GameObject tempObject = temp.get(i);
                     handler.getLst().add(tempObject);
                 }
-                AudioPlayer.getMusic("shop_music").stop();
-                AudioPlayer.getMusic("pause").loop();
+                if (!game.isMute()) {
+                    AudioPlayer.getMusic("shop_music").stop();
+                    AudioPlayer.getMusic("pursuit").loop();
+                }
+            } else if (game.getGameState() == Game.STATE.Settings || game.getGameState() == Game.STATE.Help) {
+                game.setGameState(Game.STATE.Menu);
+            } else if (game.getGameState() == Game.STATE.Menu)
+                System.exit(0);
+
+        } else if (key == KeyEvent.VK_SPACE) {
+            if (game.getGameState() == Game.STATE.Game) {
+                shop.getTemporary().clear();
+                game.setGameState(Game.STATE.Shop);
+                if (!game.isMute()) {
+                    AudioPlayer.getMusic("pursuit").stop();
+                    AudioPlayer.getMusic("shop_music").loop();
+                }
+            } else if (game.getGameState() == Game.STATE.Shop) {
+                game.setGameState(Game.STATE.Game);
+                LinkedList<GameObject> temp = shop.getTemporary();
+                for (int i = 0; i < temp.size(); i++) {
+                    GameObject tempObject = temp.get(i);
+                    handler.getLst().add(tempObject);
+                }
+                if (!game.isMute()) {
+                    AudioPlayer.getMusic("shop_music").stop();
+                    AudioPlayer.getMusic("pursuit").loop();
+                }
             }
-        }
-        else if (game.getGameAmmo() == Game.Ammo.Blazer && key == KeyEvent.VK_G) {
+        } else if (game.getGameAmmo() == Game.Ammo.Blazer && key == KeyEvent.VK_G) {
             game.setCond(!game.getCond());
-            game.onoffCounter = 0;
+            game.setOnoffCounter(0);
         }
     }
 

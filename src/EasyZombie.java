@@ -1,12 +1,13 @@
 import java.awt.*;
-import java.awt.image.BufferedImage;
 
 public class EasyZombie extends Zombie {
 
     private Player player;
     private Handler handler;
 
-    private float health = 20, greenValue = 255;
+    private float health = 20, colorValue = 255;
+
+    private Color color;
 
     public EasyZombie(Game game, float x, float y, ID id, Player player, Handler handler, int ad) {
         super(game,x, y, id, ad);
@@ -20,9 +21,9 @@ public class EasyZombie extends Zombie {
     @Override
     public void tick() {
         health = Game.clamp(health, 0, 50);
-        greenValue = Game.clamp(greenValue, 0, 255);
+        colorValue = Game.clamp(colorValue, 0, 255);
 
-        greenValue = health * 12;
+        colorValue = health * 12;
 
         float diffX = x - player.x - 8;
         float diffY = y - player.y - 8;
@@ -35,20 +36,34 @@ public class EasyZombie extends Zombie {
         x += velX;
         y += velY;
 
-        if (y <= 0 || y >= (int)game.HEIGHT - 32) velY *= -1;
-        if (x <= 0 || x >= (int)game.WIDTH - 32) velX *= -1;
+        if (y <= 0 || y >= (int) game.getHEIGHT() - 32) velY *= -1;
+        if (x <= 0 || x >= (int) game.getWIDTH() - 32) velX *= -1;
 
-        handler.addObject(new Trail(x, y, 23, 23, 0.04f, ID.Trail, new Color(100, (int) greenValue, 0), handler));
-        health = collision(handler,health,7);
+        chooseColor();
 
-         comeHere();
+        handler.addObject(new Trail(x, y, 23, 23, 0.04f, ID.Trail, color, handler));
+        health = collision(handler, health, 7);
+
+        comeHere();
+    }
+
+    private void chooseColor () {
+        if (game.getZombieColor() == Game.ZombieColor.Blue)
+            color = new Color(0, 0, (int) colorValue);
+        else if (game.getZombieColor() == Game.ZombieColor.Yellow)
+            color = new Color((int)colorValue,249,0);
+        else if (game.getZombieColor() == Game.ZombieColor.White)
+            color = new Color(0, 0, (int) colorValue);
+        else if (game.getZombieColor() == Game.ZombieColor.Green)
+            color = new Color(100, (int) colorValue, 0);
+        else if (game.getZombieColor() == Game.ZombieColor.Purple)
+            color = new Color(100, 0, (int) colorValue);
+        else
+            color = new Color((int) colorValue, 0, 0);
     }
 
     @Override
-    public void render(Graphics g) {
-        g.setColor(new Color(100,(int)greenValue,0));
-        g.fillRect((int) x, (int) y, 23, 23);
-    }
+    public void render(Graphics g) {}
 
     public Rectangle getBounds() {
         return new Rectangle((int) x, (int) y, 16, 16);

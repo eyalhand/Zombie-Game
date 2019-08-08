@@ -3,7 +3,7 @@ import java.awt.*;
 public class UziBullet extends Bullet {
 
     public UziBullet(Game game,Player player,float x, float y, float mx, float my, ID id, Handler handler) {
-        super(game,player,x, y, mx, my, id, handler,20);
+        super(game,player,x, y, mx, my, id, handler,21);
     }
 
     @Override
