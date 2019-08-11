@@ -58,6 +58,7 @@ public class Player extends GameObject {
             g.setColor(c2);
             g.drawString("Blazers: " + Blazers, 15, 110);
         }
+        g.setColor(Color.white);
         g.drawString("(" + game.getGameAmmo() + ")", 15, 125);
     }
 
@@ -125,7 +126,7 @@ public class Player extends GameObject {
             if (getBounds().intersects(tempObject.getBounds())) {
                 if (tempObject instanceof BlazersAmmo) {
                     //BlazersBullet code
-                    Blazers += 2;
+                    Blazers += 5;
                     handler.removeObject(tempObject);
                 }
                 else {

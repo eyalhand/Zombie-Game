@@ -111,8 +111,6 @@ public class KeyInput extends KeyAdapter {
                 } else {
                     if (game.getMode() == Game.Mode.Regular)
                         game.setMode(Game.Mode.MaxDamage);
-                    else if (game.getMode() == Game.Mode.MaxDamage)
-                        game.setMode(Game.Mode.Unknown);
                     else {
                         game.setMode(Game.Mode.Regular);
                     }
@@ -164,9 +162,7 @@ public class KeyInput extends KeyAdapter {
                     else
                         game.setBackground(Game.Background.Background3);
                 } else {
-                    if (game.getMode() == Game.Mode.Regular)
-                        game.setMode(Game.Mode.Unknown);
-                    else if (game.getMode() == Game.Mode.MaxDamage)
+                    if (game.getMode() == Game.Mode.MaxDamage)
                         game.setMode(Game.Mode.Regular);
                     else {
                         game.setMode(Game.Mode.MaxDamage);

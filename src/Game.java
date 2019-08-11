@@ -1,7 +1,4 @@
-import org.newdawn.slick.Music;
 import org.newdawn.slick.SlickException;
-import org.newdawn.slick.Sound;
-
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferStrategy;
@@ -12,7 +9,7 @@ public class Game extends Canvas implements Runnable {
 
     Toolkit toolkit = Toolkit.getDefaultToolkit();
 
-    private double WIDTH = toolkit.getScreenSize().getWidth(), HEIGHT = toolkit.getScreenSize().getHeight();
+    private double WIDTH = toolkit.getScreenSize().getWidth(), HEIGHT = toolkit.getScreenSize().getHeight() - 30;
     private String title = "Zombies Attack";
 
     private Thread thread;
@@ -88,8 +85,7 @@ public class Game extends Canvas implements Runnable {
 
     public enum Mode {
         Regular,
-        MaxDamage,
-        Unknown
+        MaxDamage
     }
 
     private STATE gameState = STATE.Menu;
@@ -196,6 +192,12 @@ public class Game extends Canvas implements Runnable {
     private void tick() {
         //updates the game
         handler.tick();
+        if (mode == Mode.MaxDamage) {
+            gameAmmo = Ammo.Blazer;
+            hud.bounds = 250;
+            hud.Health = 100 + (hud.bounds / 2);
+            handler.setSpeed(8);
+        }
         if (gameState == STATE.Game) {
             spawner.tick();
             hud.tick();
@@ -218,21 +220,7 @@ public class Game extends Canvas implements Runnable {
             pause.tick();
         else if (gameState == STATE.Shop)
             shop.tick();
-
-        if (mute)
-            AudioPlayer.getMusic("background_music").stop();
     }
-
-    /*private void mute() {
-        if (mute) {
-            for(Sound s: AudioPlayer.soundMap.values()) {
-                s.stop();
-            }
-            for(Music m: AudioPlayer.musicMap.values()) {
-                m.stop();
-            }
-        }
-    }*/
 
     private void render() throws IOException {
         //renders the game
@@ -255,8 +243,9 @@ public class Game extends Canvas implements Runnable {
                 graphics.drawImage(ImageIO.read(getClass().getResource("/res/stage2.jpg")), 0, 0, (int) WIDTH, (int) HEIGHT, null);
             else if (background == Background.Background3)
                 graphics.drawImage(ImageIO.read(getClass().getResource("/res/stage3.jpg")), 0, 0, (int) WIDTH, (int) HEIGHT, null);
-            else
+            else {
                 graphics.drawImage(ImageIO.read(getClass().getResource("/res/stage4.png")), 0, 0, (int) WIDTH, (int) HEIGHT, null);
+            }
 
             handler.render(graphics);
             hud.render(graphics);

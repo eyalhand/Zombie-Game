@@ -19,7 +19,7 @@ public class Settings extends MouseAdapter {
 
         triangle = ImageIO.read(getClass().getResource("/res/triangle.png"));
         triangle2 = ImageIO.read(getClass().getResource("/res/triangle2.png"));
-        muteOn = ImageIO.read(getClass().getResource("/res/mute_on.svg"));
+        muteOn = ImageIO.read(getClass().getResource("/res/mute_on.jpg"));
         muteOff = ImageIO.read(getClass().getResource("/res/mute_off.jpg"));
 
     }
@@ -29,9 +29,20 @@ public class Settings extends MouseAdapter {
         int my = e.getY();
 
         if (game.getGameState() == Game.STATE.Settings) {
+            //mute button
+            if (mouseOver(mx, my, (int)game.getWIDTH() - 100,30,70,70)) {
+                if (game.isMute()) {
+                    game.setMute(false);
+                    AudioPlayer.getMusic("background_music").loop();
+                } else {
+                    game.setMute(true);
+                    AudioPlayer.getMusic("background_music").stop();
+                }
+            }
             //back button
             if (mouseOver(mx, my, 40,20,120,35)) {
-                AudioPlayer.getSound("click_sound").play();
+                if (!game.isMute())
+                    AudioPlayer.getSound("click_sound").play();
 
                 game.setGameState(Game.STATE.Menu);
             }
@@ -54,9 +65,9 @@ public class Settings extends MouseAdapter {
         g.drawString("Settings",(int)game.getWIDTH()/2 - 300,120);
 
         if (game.isMute())
-            g.drawImage(muteOn,(int)game.getWIDTH() - 70,30,45,45,null);
+            g.drawImage(muteOn,(int)game.getWIDTH() - 100,30,70,70,null);
         else
-            g.drawImage(muteOff,(int)game.getWIDTH() - 70,30,45,45,null);
+            g.drawImage(muteOff,(int)game.getWIDTH() - 100,30,70,70,null);
 
         g.setFont(font2);
         color(g,Game.SettingOption.PlayerColors);

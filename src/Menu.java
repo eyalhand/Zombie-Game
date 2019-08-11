@@ -142,7 +142,7 @@ public class Menu extends MouseAdapter {
                     AudioPlayer.getSound("click_sound").play();
 
                 newGame();
-                handler.getLst().clear();
+                //handler.getLst().clear();
             }
         }
     }
@@ -288,9 +288,11 @@ public class Menu extends MouseAdapter {
         Spawn.initialize();
         Shop.initialize();
 
-        handler.setSpeed(5);
         handler.getLst().clear();
-        game.setGameAmmo(Game.Ammo.Pistol);
+        if (game.getMode() != Game.Mode.MaxDamage) {
+            game.setGameAmmo(Game.Ammo.Pistol);
+            handler.setSpeed(5);
+        }
         game.setCond(false);
     }
 }

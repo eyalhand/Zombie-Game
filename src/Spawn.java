@@ -127,7 +127,7 @@ public class Spawn {
         }
         else if (game.getGameAmmo() == Game.Ammo.Blazer) {
             spawnBulletCollector = r.nextInt(320);
-            int spawnBulletCollector2 = r.nextInt(300);
+            int spawnBulletCollector2 = r.nextInt(200);
             if (spawnBulletCollector == 0) {
                 handler.addObject(new AWPAmmo(r.nextInt((int)game.getWIDTH() - 60), r.nextInt((int)game.getHEIGHT() - 60), ID.Ammo, handler));
             }

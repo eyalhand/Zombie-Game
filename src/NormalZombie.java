@@ -53,7 +53,7 @@ public class NormalZombie extends Zombie {
         else if (game.getZombieColor() == Game.ZombieColor.Yellow)
             color = new Color((int)colorValue,249,0);
         else if (game.getZombieColor() == Game.ZombieColor.White)
-            color = new Color(0, 0, (int) colorValue);
+            color = new Color(255, 255, (int) colorValue);
         else if (game.getZombieColor() == Game.ZombieColor.Green)
             color = new Color(100, (int) colorValue, 0);
         else if (game.getZombieColor() == Game.ZombieColor.Purple)

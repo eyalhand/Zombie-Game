@@ -20,7 +20,7 @@ public class Pause extends MouseAdapter {
         this.game = game;
         this.handler = handler;
 
-        muteOn = ImageIO.read(getClass().getResource("/res/mute_on.svg"));
+        muteOn = ImageIO.read(getClass().getResource("/res/mute_on.jpg"));
         muteOff = ImageIO.read(getClass().getResource("/res/mute_off.jpg"));
     }
 
@@ -41,9 +41,19 @@ public class Pause extends MouseAdapter {
                 MouseInput.setLastState(Game.STATE.Pause);
                 game.setGameState(Game.STATE.Game);
             }
+            //mute button
+            else if (mouseOver(mx, my, (int) game.getWIDTH() - 100, 30, 70, 70)) {
+                if (game.isMute()) {
+                    game.setMute(false);
+                    AudioPlayer.getMusic("pause").loop();
+                } else {
+                    game.setMute(true);
+                    AudioPlayer.getMusic("pause").stop();
+                }
+            }
 
             //back to main menu button
-            if (mouseOver(mx, my, (int)game.getWIDTH() - 650, (int)game.getHEIGHT() - 150, 600, 90)) {
+            else if (mouseOver(mx, my, (int) game.getWIDTH() - 650, (int) game.getHEIGHT() - 150, 600, 90)) {
                 AudioPlayer.getMusic("pause").stop();
                 AudioPlayer.getMusic("background_music").loop();
 
@@ -80,9 +90,9 @@ public class Pause extends MouseAdapter {
             g.drawString("Pause", (int)game.getWIDTH()/2 - 200, 135);
 
             if (game.isMute())
-                g.drawImage(muteOn,(int)game.getWIDTH() - 70,30,45,45,null);
+                g.drawImage(muteOn,(int)game.getWIDTH() - 100,30,70,70,null);
             else
-                g.drawImage(muteOff,(int)game.getWIDTH() - 70,30,45,45,null);
+                g.drawImage(muteOff,(int)game.getWIDTH() - 100,30,70,70,null);
 
             g.setFont(font2);
             g.setColor(Color.white);
