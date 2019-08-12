@@ -102,6 +102,10 @@ public class Game extends Canvas implements Runnable {
 
     public static BufferedImage spriteSheet;
     public static BufferedImage shopImg;
+    public static BufferedImage background1;
+    public static BufferedImage background2;
+    public static BufferedImage background3;
+    public static BufferedImage background4;
 
     public Game() throws SlickException, IOException {
         init();
@@ -117,6 +121,10 @@ public class Game extends Canvas implements Runnable {
 
         spriteSheet = ImageIO.read(getClass().getResource("/res/z.jpg"));
         shopImg = ImageIO.read(getClass().getResource("/res/shopImg.jpg"));
+        background1 = ImageIO.read(getClass().getResource("/res/stage1.jpg"));
+        background2 = ImageIO.read(getClass().getResource("/res/stage2.jpg"));
+        background3 = ImageIO.read(getClass().getResource("/res/stage3.jpg"));
+        background4 = ImageIO.read(getClass().getResource("/res/stage4.jpg"));
 
         spawner = null;
         mouseInput = null;
@@ -192,13 +200,13 @@ public class Game extends Canvas implements Runnable {
     private void tick() {
         //updates the game
         handler.tick();
-        if (mode == Mode.MaxDamage) {
-            gameAmmo = Ammo.Blazer;
-            hud.bounds = 250;
-            hud.Health = 100 + (hud.bounds / 2);
-            handler.setSpeed(8);
-        }
         if (gameState == STATE.Game) {
+            if (mode == Mode.MaxDamage) {
+                gameAmmo = Ammo.Blazer;
+                hud.bounds = 250;
+                hud.Health = 100 + (hud.bounds / 2);
+                handler.setSpeed(8);
+            }
             spawner.tick();
             hud.tick();
             if (HUD.Health == 0) {
@@ -238,13 +246,13 @@ public class Game extends Canvas implements Runnable {
 
         if (gameState == STATE.Game) {
             if (background == Background.Background1)
-                graphics.drawImage(ImageIO.read(getClass().getResource("/res/stage1.jpg")), 0, 0, (int) WIDTH, (int) HEIGHT, null);
+                graphics.drawImage(background1, 0, 0, (int) WIDTH, (int) HEIGHT, null);
             else if (background == Background.Background2)
-                graphics.drawImage(ImageIO.read(getClass().getResource("/res/stage2.jpg")), 0, 0, (int) WIDTH, (int) HEIGHT, null);
+                graphics.drawImage(background2, 0, 0, (int) WIDTH, (int) HEIGHT, null);
             else if (background == Background.Background3)
-                graphics.drawImage(ImageIO.read(getClass().getResource("/res/stage3.jpg")), 0, 0, (int) WIDTH, (int) HEIGHT, null);
+                graphics.drawImage(background3, 0, 0, (int) WIDTH, (int) HEIGHT, null);
             else {
-                graphics.drawImage(ImageIO.read(getClass().getResource("/res/stage4.png")), 0, 0, (int) WIDTH, (int) HEIGHT, null);
+                graphics.drawImage(background4, 0, 0, (int) WIDTH, (int) HEIGHT, null);
             }
 
             handler.render(graphics);

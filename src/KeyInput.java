@@ -164,9 +164,8 @@ public class KeyInput extends KeyAdapter {
                 } else {
                     if (game.getMode() == Game.Mode.MaxDamage)
                         game.setMode(Game.Mode.Regular);
-                    else {
+                    else
                         game.setMode(Game.Mode.MaxDamage);
-                    }
                 }
             }
         } else if (key == KeyEvent.VK_ESCAPE) {

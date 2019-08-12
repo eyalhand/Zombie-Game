@@ -6,6 +6,7 @@ public class Handler {
     private int speed = 5;
     private LinkedList<GameObject> lst = new LinkedList<>();
 
+
     public void tick(){
         synchronized (lst) {
             for (int i = 0; i < lst.size(); i++)
