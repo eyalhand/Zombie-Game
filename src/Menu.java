@@ -8,19 +8,24 @@ public class Menu extends MouseAdapter {
 
     private Game game;
     private Handler handler;
-    private HUD hud;
+    private HighScore highScore;
     private MouseInput mouseInput;
+
+    private String highScoreString;
+    private String leagueLeaders;
 
     private float[] startPositionsX = new float[6];
     private float[] startPositionsY = new float[6];
 
     private Random r = new Random();
 
-    public Menu(Game game,Handler handler,HUD hud) {
+    public Menu(Game game,Handler handler,HighScore highScore) {
         this.game = game;
         this.handler = handler;
-        this.hud = hud;
+        this.highScore = highScore;
         this.mouseInput = null;
+        this.highScoreString = null;
+        this.leagueLeaders = null;
 
         startPositionsX[0] = (float) r.nextInt(10) * -1;
         startPositionsX[1] = (float) Math.random()*11 + (int)game.getWIDTH();
@@ -173,6 +178,13 @@ public class Menu extends MouseAdapter {
             g.drawString("New Game", 50, 225);
 
             g.setFont(font3);
+            g.setColor(Color.orange);
+            if (leagueLeaders != null) {
+                g.drawString(leagueLeaders, ((int) game.getWIDTH() / 2) - 210, 350);
+                g.drawString("Name     Zombies Killed", (int) (game.getWIDTH() / 2) - 200, 300);
+            }
+
+            g.setFont(font3);
             g.setColor(new Color(0,200,200));
             g.drawString("Help", (int)game.getWIDTH() - 160, (int)game.getHEIGHT() - 100);
 
@@ -237,6 +249,7 @@ public class Menu extends MouseAdapter {
         else if (game.getGameState() == Game.STATE.GameOver) {
             Font font = new Font("AR DARLING",1,135);
             Font font2 = new Font("AR DARLING",1,70);
+            Font font3 = new Font("AR DARLING",5,35);
 
             g.setFont(font);
             g.setColor(Color.red);
@@ -246,6 +259,12 @@ public class Menu extends MouseAdapter {
             g.setColor(Color.red);
             g.drawString("Zombies Killed: " + HUD.zombiesKilled, 450, 300);
 
+            g.setColor(Color.orange);
+            g.drawString(chooseLayout(), 350, 450);
+            g.setFont(font3);
+            g.drawString("Press Enter To Save", 500,550);
+
+            g.setFont(font2);
             g.setColor(Color.white);
             g.drawString("Back",(int)game.getWIDTH()/2 - 100,750);
         }
@@ -283,10 +302,31 @@ public class Menu extends MouseAdapter {
         return new Pair<>(x,y);
     }
 
+    private String chooseLayout() {
+        if (highScoreString == null) {
+            return "Enter Your Name: _ _ _ _ _ _";
+        } else if (highScoreString.equals("Not A Valid Name")) {
+            highScoreString = null;
+            return "Enter At Least One Character";
+        } else {
+            return "Enter Your Name: " + highScoreString;
+        }
+    }
+
+    public void getChar(String c) {
+        if (c.equals("Not A Valid Name") || highScoreString == null)
+            highScoreString = c;
+        else if (highScoreString.length() <= 6) {
+            highScoreString += c;
+        }
+    }
+
     private void newGame() {
         HUD.initialize();
         Spawn.initialize();
         Shop.initialize();
+
+        highScoreString = null;
 
         handler.getLst().clear();
         if (game.getMode() != Game.Mode.MaxDamage) {
@@ -294,5 +334,22 @@ public class Menu extends MouseAdapter {
             handler.setSpeed(5);
         }
         game.setCond(false);
+    }
+
+
+    public String getHighScoreString() {
+        return highScoreString;
+    }
+
+    public void setHighScoreString(String highScoreString) {
+        this.highScoreString = highScoreString;
+    }
+
+    public String getLeagueLeaders() {
+        return leagueLeaders;
+    }
+
+    public void setLeagueLeaders(String leagueLeaders) {
+        this.leagueLeaders = leagueLeaders;
     }
 }

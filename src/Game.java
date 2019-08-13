@@ -29,6 +29,7 @@ public class Game extends Canvas implements Runnable {
     private MouseInput mouseInput;
     private Shop shop;
     private Settings settings;
+    private HighScore highScore;
 
     public enum STATE {
         Menu,
@@ -131,14 +132,15 @@ public class Game extends Canvas implements Runnable {
         handler = new Handler();
         hud = new HUD(this);
         shop = new Shop(handler,hud,this);
-        menu = new Menu(this,handler,hud);
         pause = new Pause(this,handler);
         settings = new Settings(this);
+        highScore = new HighScore();
+        menu = new Menu(this,handler,highScore);
         this.addMouseListener(menu);
         this.addMouseListener(pause);
         this.addMouseListener(shop);
         this.addMouseListener(settings);
-        this.addKeyListener(new KeyInput(handler,this,pause,shop));
+        this.addKeyListener(new KeyInput(handler,this,pause,shop,menu,highScore));
     }
 
     private synchronized void start() {

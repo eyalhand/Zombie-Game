@@ -8,14 +8,19 @@ public class KeyInput extends KeyAdapter {
     private Game game;
     private Pause pause;
     private Shop shop;
+    private Menu menu;
+    private HighScore highScore;
+
 
     private boolean[] keyDown = new boolean[4];
 
-    public KeyInput(Handler handler, Game game,Pause pause,Shop shop){
+    public KeyInput(Handler handler, Game game,Pause pause,Shop shop, Menu menu,HighScore highScore){
         this.handler = handler;
         this.game = game;
         this.pause = pause;
         this.shop = shop;
+        this.menu = menu;
+        this.highScore = highScore;
 
         for (int i = 0; i < 4; i++) {
             keyDown[i] = false;
@@ -43,6 +48,8 @@ public class KeyInput extends KeyAdapter {
                     game.setSettingOption(Game.SettingOption.ZombieColors);
                 else
                     game.setSettingOption(Game.SettingOption.Backgrounds);
+            } else if (game.getGameState() == Game.STATE.GameOver) {
+                menu.getChar("W");
             }
         } else if (key == KeyEvent.VK_S) {
             if (game.getGameState() == Game.STATE.Game) {
@@ -62,6 +69,8 @@ public class KeyInput extends KeyAdapter {
                     game.setSettingOption(Game.SettingOption.Mode);
                 else
                     game.setSettingOption(Game.SettingOption.PlayerColors);
+            } else if (game.getGameState() == Game.STATE.GameOver) {
+                menu.getChar("S");
             }
         } else if (key == KeyEvent.VK_D) {
             if (game.getGameState() == Game.STATE.Game) {
@@ -115,6 +124,8 @@ public class KeyInput extends KeyAdapter {
                         game.setMode(Game.Mode.Regular);
                     }
                 }
+            } else if (game.getGameState() == Game.STATE.GameOver) {
+                menu.getChar("D");
             }
         } else if (key == KeyEvent.VK_A) {
             if (game.getGameState() == Game.STATE.Game) {
@@ -167,6 +178,8 @@ public class KeyInput extends KeyAdapter {
                     else
                         game.setMode(Game.Mode.MaxDamage);
                 }
+            } else if (game.getGameState() == Game.STATE.GameOver) {
+                menu.getChar("A");
             }
         } else if (key == KeyEvent.VK_ESCAPE) {
             if (game.getGameState() == Game.STATE.Game) {
@@ -225,6 +238,33 @@ public class KeyInput extends KeyAdapter {
         } else if (game.getGameAmmo() == Game.Ammo.Blazer && key == KeyEvent.VK_G) {
             game.setCond(!game.getCond());
             game.setOnoffCounter(0);
+
+        } else if (game.getGameState() == Game.STATE.GameOver) {
+            if (key == KeyEvent.VK_ENTER) {
+                String newHighScore = menu.getHighScoreString();
+                if (newHighScore != null && newHighScore.length() > 0) {
+                    highScore.addScore(newHighScore, HUD.zombiesKilled);
+                    game.setGameState(Game.STATE.Menu);
+                    menu.setLeagueLeaders(highScore.getHighScoreString());
+                }
+                else {
+                    menu.getChar("Not A Valid Name");
+                }
+            }
+            else if (key == KeyEvent.VK_BACK_SPACE) {
+                String tmp = menu.getHighScoreString();
+                if (tmp != null) {
+                    if (tmp.length() == 1) {
+                        menu.setHighScoreString("");
+                    }
+                    else {
+                        tmp = tmp.substring(0,tmp.length() - 1);
+                        menu.setHighScoreString(tmp);
+                    }
+                }
+            } else {
+                menu.getChar(e.getKeyChar() + "");
+            }
         }
     }
 
