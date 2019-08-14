@@ -99,6 +99,7 @@ public class Game extends Canvas implements Runnable {
 
     private boolean cond = false;
     private boolean mute = false;
+    private boolean maxDamageOneTime = false;
     private int onoffCounter = 0;
 
     public static BufferedImage spriteSheet;
@@ -203,7 +204,8 @@ public class Game extends Canvas implements Runnable {
         //updates the game
         handler.tick();
         if (gameState == STATE.Game) {
-            if (mode == Mode.MaxDamage) {
+            if (mode == Mode.MaxDamage && !maxDamageOneTime) {
+                maxDamageOneTime = true;
                 gameAmmo = Ammo.Blazer;
                 hud.bounds = 250;
                 hud.Health = 100 + (hud.bounds / 2);
@@ -222,7 +224,7 @@ public class Game extends Canvas implements Runnable {
         }
         else if (gameState == STATE.GameOver) {
             this.removeMouseListener(mouseInput);
-            menu.tick();
+            maxDamageOneTime = false;
         }
         else if (gameState == STATE.Menu || gameState == STATE.Help
                 || gameState == STATE.Select) menu.tick();

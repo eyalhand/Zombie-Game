@@ -8,14 +8,13 @@ public class HighScore {
     private ArrayList<Score> leagueLeaders;
     private File file;
 
-    private static final String highScoreFile = "res/leagueLeaders.txt";
+    private static final String highScoreFile = "res/leagueLeaders.dat";
 
     public HighScore() throws IOException {
 
         leagueLeaders = new ArrayList<>();
         file = new File(highScoreFile);
         file.createNewFile();
-
     }
 
     public ArrayList<Score> getScores() {
@@ -104,18 +103,37 @@ public class HighScore {
             x = max;
         }
         while (i < x) {
-            highScoreString += (i + 1) + ". " + scores.get(i).getName() + "             "
-                                + scores.get(i).getScore();
-            highScoreString += System.getProperty("line.separator");
+            highScoreString += (i + 1) + ". " + scores.get(i).getName() + "-"
+                                + scores.get(i).getScore() + ":";
             i++;
         }
         return highScoreString;
     }
 
-    public File getFile() {
-        return file;
+    public int findMax() {
+        return leagueLeaders.get(0).score;
     }
 
+    public int findMin() {
+        int max = 8;
+        int output = Integer.MAX_VALUE;
+
+        ArrayList<Score> scores;
+        scores = getScores();
+
+        int i = 0;
+        int x = scores.size();
+        if (x > max) {
+            x = max;
+        }
+        while (i < x) {
+            output = Integer.min(output,leagueLeaders.get(i).score);
+            i++;
+        }
+        return output;
+    }
+
+    public File getFile() { return file; }
 
     private class Score {
 

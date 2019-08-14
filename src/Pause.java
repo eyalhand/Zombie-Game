@@ -31,8 +31,10 @@ public class Pause extends MouseAdapter {
         if (game.getGameState() == Game.STATE.Pause) {
             //resume button
             if (mouseOver(mx, my, 110, 210, 230, 50)) {
-                AudioPlayer.getMusic("pause").stop();
-                AudioPlayer.getMusic("pursuit").loop();
+                if (!game.isMute()) {
+                    AudioPlayer.getMusic("pause").stop();
+                    AudioPlayer.getMusic("pursuit").loop();
+                }
 
                 for (int i = 0; i < temporary.size(); i++) {
                     GameObject tempObject = temporary.get(i);
