@@ -218,7 +218,7 @@ public class KeyInput extends KeyAdapter {
             } else if (game.getGameState() == Game.STATE.Menu)
                 System.exit(0);
 
-        } else if (game.getGameAmmo() == Game.Ammo.Blazer && key == KeyEvent.VK_G) {
+        } else if (game.getGameState() == Game.STATE.Game && game.getGameAmmo() == Game.Ammo.Blazer && key == KeyEvent.VK_G) {
             game.setCond(!game.getCond());
             game.setOnoffCounter(0);
 
@@ -227,9 +227,9 @@ public class KeyInput extends KeyAdapter {
                 String newHighScore = menu.getHighScoreString();
                 if (newHighScore != null && newHighScore.length() > 0 && !enterOnce) {
                     enterOnce = true;
-                    highScore.addScore(newHighScore, HUD.zombiesKilled);
+                    highScore.addScore(newHighScore, HUD.zombiesKilled,game.getDIFF());
                     menu.changeRender(false);
-                    menu.setLeagueLeaders(highScore.getHighScoreString());
+                    menu.setLeagueLeaders(highScore.getHighScoreString(game.getDIFF()));
                 } else {
                     menu.getChar('^');
                 }
@@ -266,6 +266,11 @@ public class KeyInput extends KeyAdapter {
                     AudioPlayer.getMusic("pursuit").loop();
                 }
             }
+        } else if (game.getGameState() == Game.STATE.Menu) {
+            if (key == KeyEvent.VK_E) {
+                game.setHighScoreLevel((game.getHighScoreLevel() + 1) % 3);
+            } else if (key == KeyEvent.VK_Q)
+                game.setHighScoreLevel((game.getHighScoreLevel() + 2) % 3);
         }
     }
     public void keyReleased(KeyEvent e){

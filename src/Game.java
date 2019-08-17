@@ -15,6 +15,7 @@ public class Game extends Canvas implements Runnable {
     private Thread thread;
 
     private boolean isRunning = false;
+
     public static int DIFF = 0;
     //0 = easy
     //1 = normal
@@ -101,6 +102,7 @@ public class Game extends Canvas implements Runnable {
     private boolean mute = false;
     private boolean maxDamageOneTime = false;
     private int onoffCounter = 0;
+    private int highScoreLevel = 0;
 
     public static BufferedImage spriteSheet;
     public static BufferedImage shopImg;
@@ -135,7 +137,7 @@ public class Game extends Canvas implements Runnable {
         shop = new Shop(handler,hud,this);
         pause = new Pause(this,handler);
         settings = new Settings(this);
-        highScore = new HighScore();
+        highScore = new HighScore(this);
         menu = new Menu(this,handler,highScore);
         this.addMouseListener(menu);
         this.addMouseListener(pause);
@@ -343,6 +345,12 @@ public class Game extends Canvas implements Runnable {
     public Ammo getGameAmmo() { return gameAmmo; }
 
     public void setGameAmmo(Ammo gameAmmo) { this.gameAmmo = gameAmmo; }
+
+    public static int getDIFF() { return DIFF; }
+
+    public int getHighScoreLevel() { return highScoreLevel; }
+
+    public void setHighScoreLevel(int highScoreLevel) { this.highScoreLevel = highScoreLevel; }
 
     public static void main(String[]args) throws SlickException, IOException {
         new Game();

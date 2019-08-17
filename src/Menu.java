@@ -262,8 +262,8 @@ public class Menu extends MouseAdapter {
             g.drawString("Zombies Killed: " + HUD.zombiesKilled, 450, 300);
 
             g.setColor(Color.orange);
-            ArrayList highScoresList =  highScore.getScores();
-            if (HUD.zombiesKilled > highScore.findMin()  || highScoresList.size() < 8)
+            ArrayList highScoresList =  highScore.getScores(game.getDIFF());
+            if (HUD.zombiesKilled > highScore.findMin(game.getDIFF())  || highScoresList.size() < 8)
                 render2 = true;
             if (render1 && render2) {
                 String valid;
@@ -276,10 +276,10 @@ public class Menu extends MouseAdapter {
                 }
                 g.setFont(font3);
                 g.drawString("Press Enter To Save", 550, 600);
-                if (highScoresList.size() < 8 || HUD.zombiesKilled > highScore.findMax()) {
+                if (HUD.zombiesKilled > highScore.findMax()) {
                     g.setFont(font4);
                     g.setColor(Color.cyan);
-                    g.drawString("---NEW RECORD---", 300, 400);
+                    g.drawString("---NEW RECORD!---", 300, 400);
                 } else {
                     g.setFont(font4);
                     g.setColor(Color.cyan);
@@ -328,10 +328,11 @@ public class Menu extends MouseAdapter {
     }
 
     private void printHighScoreTable(Graphics g,Font font) {
-        g.setFont(font);
+        int highScoreLevel = game.getHighScoreLevel();
+        g.setFont(new Font("AR DARLING", 1, 40));
         g.setColor(Color.orange);
-        if (leagueLeaders == null)
-            leagueLeaders = highScore.getHighScoreString();
+        //if (leagueLeaders == null)
+            leagueLeaders = highScore.getHighScoreString(highScoreLevel);
         String workingString = leagueLeaders;
         int x = ((int) game.getWIDTH() / 2) - 258;
         int y = 350;
@@ -348,8 +349,22 @@ public class Menu extends MouseAdapter {
             } else
                 i = leagueLeaders.length();
         }
-        g.setColor(new Color(0, 255, 100));
-        g.drawString("Name        Zombies Killed", (int) (game.getWIDTH() / 2) - 200, 300);
+        String level = "";
+        if (highScoreLevel == 0)
+            level = "Easy";
+        else if (highScoreLevel == 1)
+            level = "Normal";
+        else if (highScoreLevel == 2)
+            level = "Hard";
+        g.setFont(new Font("AR DARLING", 1, 45));
+        g.setColor(new Color(0,200,100));
+        g.drawString("High Scores - " + level, (int) (game.getWIDTH() / 2) + 260, 220);
+        g.setColor(Color.red);
+        g.setFont(new Font("AR DARLING", 1, 30));
+        g.drawString("E & Q To Switch", (int) (game.getWIDTH() / 2) + 330, 250);
+        g.setFont(font);
+        g.setColor(new Color(0,200,100));
+        g.drawString("Name        Zombies Killed", (int) (game.getWIDTH() / 2) - 230, 300);
     }
 
     private String chooseLayout() {
@@ -368,8 +383,12 @@ public class Menu extends MouseAdapter {
     }
 
     public void getChar(char c) {
-        if (c == '^' || highScoreString == null)
+        if (c == '^')
             highScoreString = "";
+        else if (highScoreString == null) {
+            char cFinal = Character.toUpperCase(c);
+            highScoreString = cFinal + "";
+        }
         else if (highScoreString.length() <= 8) {
             char cFinal = Character.toUpperCase(c);
             highScoreString += cFinal;

@@ -6,19 +6,27 @@ import java.util.Comparator;
 public class HighScore {
 
     private ArrayList<Score> leagueLeaders;
-    private File file;
+    private File fileEasy,fileNormal,fileHard;
+    private Game game;
 
-    private static final String highScoreFile = "res/leagueLeaders.dat";
+    private static final String highScoreFileEasy = System.getProperty("user.home") + "/highScoreFileEasy.dat";
+    private static final String highScoreFileNormal = System.getProperty("user.home") + "/highScoreFileNormal.dat";
+    private static final String highScoreFileHard = System.getProperty("user.home") + "/highScoreFileHard.dat";
 
-    public HighScore() throws IOException {
-
+    public HighScore(Game game) throws IOException {
+        this.game = game;
         leagueLeaders = new ArrayList<>();
-        file = new File(highScoreFile);
-        file.createNewFile();
+
+        fileEasy = new File(highScoreFileEasy);
+        fileNormal = new File(highScoreFileNormal);
+        fileHard = new File(highScoreFileHard);
+        fileEasy.createNewFile();
+        fileNormal.createNewFile();
+        fileHard.createNewFile();
     }
 
-    public ArrayList<Score> getScores() {
-        loadScoreFile();
+    public ArrayList<Score> getScores(int i) {
+        loadScoreFile(i);
         sort();
         return leagueLeaders;
     }
@@ -28,19 +36,24 @@ public class HighScore {
         Collections.sort(leagueLeaders, comparator);
     }
 
-    public void addScore(String name, int score) {
-        loadScoreFile();
-        updateScoreFile(new Score(name, score));
+    public void addScore(String name, int score, int i) {
+        loadScoreFile(i);
+        updateScoreFile(new Score(name, score), i);
     }
 
-    public void loadScoreFile() {
+    public void loadScoreFile(int i) {
         String st;
         FileReader input = null;
         BufferedReader reader = null;
         ArrayList<Score> tmp = new ArrayList<>();
 
         try {
-            input = new FileReader(highScoreFile);
+            if (i == 0)
+                input = new FileReader(highScoreFileEasy);
+            else if (i == 1)
+                input = new FileReader(highScoreFileNormal);
+            else if (i == 2)
+                input = new FileReader(highScoreFileHard);
             reader = new BufferedReader(input);
             st = reader.readLine();
             while (st != null) {
@@ -65,12 +78,17 @@ public class HighScore {
         }
     }
 
-    public void updateScoreFile(Score score) {
+    public void updateScoreFile(Score score, int i) {
         FileWriter output = null;
         BufferedWriter writer = null;
 
         try {
-            output = new FileWriter(file,true);
+            if (i == 0)
+                output = new FileWriter(fileEasy,true);
+            else if (i == 1)
+                output = new FileWriter(fileNormal,true);
+            else if (i == 2)
+                output = new FileWriter(fileHard,true);
             writer = new BufferedWriter(output);
             String st = score.name + ":" + score.score + System.getProperty("line.separator");
             writer.append(st);
@@ -90,12 +108,12 @@ public class HighScore {
         }
     }
 
-    public String getHighScoreString() {
+    public String getHighScoreString(int p) {
         String highScoreString = "";
         int max = 8;
 
         ArrayList<Score> scores;
-        scores = getScores();
+        scores = getScores(p);
 
         int i = 0;
         int x = scores.size();
@@ -111,15 +129,18 @@ public class HighScore {
     }
 
     public int findMax() {
-        return leagueLeaders.get(0).score;
+        if (leagueLeaders.size() > 0)
+            return leagueLeaders.get(0).score;
+        else
+            return -1;
     }
 
-    public int findMin() {
+    public int findMin(int p) {
         int max = 8;
         int output = Integer.MAX_VALUE;
 
         ArrayList<Score> scores;
-        scores = getScores();
+        scores = getScores(p);
 
         int i = 0;
         int x = scores.size();
@@ -132,8 +153,6 @@ public class HighScore {
         }
         return output;
     }
-
-    public File getFile() { return file; }
 
     private class Score {
 
