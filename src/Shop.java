@@ -126,7 +126,6 @@ public class Shop extends MouseAdapter {
     public void render(Graphics g) {
         Font font = new Font("AR DARLING", 1, 135);
         Font font2 = new Font("AR DARLING", 1, 50);
-        boolean more;
 
         g.setFont(font);
         g.setColor(Color.ORANGE);
@@ -134,15 +133,13 @@ public class Shop extends MouseAdapter {
 
         //item 1
         g.setFont(font2);
-        more = check(B1,g,B1Counter,6,385,300);
-        if (more == true) {
+        if (check(1,g,B1Counter,5,385,300)) {
             g.drawString("Upgrade Health", 385, 300);
             g.drawString("Cost: " + B1 + "yal's", 800, 300);
         }
 
         //item 2
-        more = check(B2,g,B2Counter,5,385,370);
-        if (more == true) {
+        if (check(2,g,B2Counter,5,385,370)) {
             if (B2Counter == 5) {
                 g.drawString("Unlock Blazers", 385, 370);
             } else {
@@ -152,22 +149,19 @@ public class Shop extends MouseAdapter {
         }
 
         //item 3
-        more = color(B3,g,B2Counter,0,385,440);
-        if (more == true) {
+        if (color(3,g,B2Counter,0,385,440)) {
             g.drawString("Refill Health", 385, 440);
             g.drawString("Cost: " + B3 + "yal's", 800, 440);
         }
 
         //item 4
-        more = check(B4,g,B4Counter,3,385,510);
-        if (more == true) {
+        if (check(4,g,B4Counter,2,385,510)) {
             g.drawString("Upgrade Speed", 385, 510);
             g.drawString("Cost: " + B4 + "yal's", 800, 510);
         }
 
         //item 5
-        more = color(B5,g,B2Counter,0,385,580);
-        if (more == true) {
+        if (color(5,g,B2Counter,0,385,580)) {
             g.drawString("Buy 50 Bullets", 385, 580);
             g.drawString("Cost: " + B5 + "yal's", 800, 580);
         }
@@ -198,7 +192,7 @@ public class Shop extends MouseAdapter {
     }
 
     private boolean color(int B,Graphics g,int counter,int limit,int x, int y) {
-        if (B == B3 || B == B5) {
+        if (B == 3 || B == 5) {
             if (hud.getScore() >= B)
                 g.setColor(new Color(0,150,255));
             else

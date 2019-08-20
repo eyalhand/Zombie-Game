@@ -8,6 +8,7 @@ public class Spawn {
     private Game game;
 
     private Random r = new Random();
+    private int numberOfZombies = 0;
     private static int time,x,lastTime;
 
     private float[] startPositionsX = new float[6];
@@ -53,12 +54,18 @@ public class Spawn {
         }
         int k = r.nextInt(x);
         if (k == 0) {
-            if (Game.DIFF == 0)
-                handler.addObject(new EasyZombie(game,chooseCord().getKey(), chooseCord().getValue(), ID.Zombie, player, handler, checkAmmo()));
-            else if (Game.DIFF == 1)
-                handler.addObject(new NormalZombie(game,chooseCord().getKey(),chooseCord().getValue(),ID.Zombie,player,handler, checkAmmo()));
-            else if (Game.DIFF == 2)
-                handler.addObject(new HardZombie(game,chooseCord().getKey(),chooseCord().getValue(),ID.Zombie,player,handler, checkAmmo()));
+            if (Game.DIFF == 0) {
+                if (handler.getNumOfZombies() <= 30)
+                    handler.addObject(new EasyZombie(game, chooseCord().getKey(), chooseCord().getValue(), ID.Zombie, player, handler, checkAmmo()));
+            }
+            else if (Game.DIFF == 1) {
+                if (handler.getNumOfZombies() <= 30)
+                    handler.addObject(new NormalZombie(game, chooseCord().getKey(), chooseCord().getValue(), ID.Zombie, player, handler, checkAmmo()));
+            }
+            else if (Game.DIFF == 2) {
+                if (handler.getNumOfZombies() <= 30)
+                    handler.addObject(new HardZombie(game, chooseCord().getKey(), chooseCord().getValue(), ID.Zombie, player, handler, checkAmmo()));
+            }
         }
     }
 
@@ -83,8 +90,10 @@ public class Spawn {
         else if (game.getGameAmmo() == Game.Ammo.Uzi)
             return 1;
         else if (game.getGameAmmo() == Game.Ammo.AK47)
+            return 2;
+        else if (game.getGameAmmo() == Game.Ammo.Negev)
             return 3;
-        return 5;
+        return 4;
     }
 
     private void spawnAmmo() {

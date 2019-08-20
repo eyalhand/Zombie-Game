@@ -186,13 +186,13 @@ public class Menu extends MouseAdapter {
 
             printHighScoreTable(g,font3);
 
-            g.setColor(new Color(0,200,200));
+            g.setColor(new Color(155, 110, 16));
             g.drawString("Help", (int)game.getWIDTH() - 160, (int)game.getHEIGHT() - 100);
 
-            g.setColor(new Color(250,100,100));
+            g.setColor(new Color(155, 110, 16));
             g.drawString("Settings", (int)game.getWIDTH()/2 - 130, (int)game.getHEIGHT() - 100);
 
-            g.setColor(new Color(0,200,200));
+            g.setColor(new Color(155, 110, 16));
             g.drawString("Quit", 50, (int)game.getHEIGHT() - 100);
         }
 
@@ -266,8 +266,8 @@ public class Menu extends MouseAdapter {
             if (HUD.zombiesKilled > highScore.findMin(game.getDIFF())  || highScoresList.size() < 8)
                 render2 = true;
             if (render1 && render2) {
-                String valid;
-                g.drawString(valid = chooseLayout(), 280, 500);
+                String valid = chooseLayout();
+                g.drawString(valid, 280, 500);
                 if (!valid.equals("Enter At Least One Character")) {
                     g.drawString("Enter Your Name: ", 280, 500);
                     Graphics2D g2 = (Graphics2D) g;
@@ -334,7 +334,7 @@ public class Menu extends MouseAdapter {
         //if (leagueLeaders == null)
             leagueLeaders = highScore.getHighScoreString(highScoreLevel);
         String workingString = leagueLeaders;
-        int x = ((int) game.getWIDTH() / 2) - 258;
+        int x = ((int) game.getWIDTH() / 2) - 280;
         int y = 350;
         for (int i = 0; i < leagueLeaders.length(); ) {
             int indexOfSplit = workingString.indexOf(":");
@@ -357,13 +357,13 @@ public class Menu extends MouseAdapter {
         else if (highScoreLevel == 2)
             level = "Hard";
         g.setFont(new Font("AR DARLING", 1, 45));
-        g.setColor(new Color(0,200,100));
+        g.setColor(new Color(155, 110, 16));
         g.drawString("High Scores - " + level, (int) (game.getWIDTH() / 2) + 260, 220);
-        g.setColor(Color.red);
+        g.setColor(Color.orange);
         g.setFont(new Font("AR DARLING", 1, 30));
         g.drawString("E & Q To Switch", (int) (game.getWIDTH() / 2) + 330, 250);
         g.setFont(font);
-        g.setColor(new Color(0,200,100));
+        g.setColor(new Color(155, 110, 16));
         g.drawString("Name        Zombies Killed", (int) (game.getWIDTH() / 2) - 230, 300);
     }
 
@@ -374,6 +374,7 @@ public class Menu extends MouseAdapter {
             if (validation > 200) {
                 highScoreString = null;
                 validation = -1;
+
             }
             validation++;
             return "Enter At Least One Character";
@@ -385,11 +386,13 @@ public class Menu extends MouseAdapter {
     public void getChar(char c) {
         if (c == '^')
             highScoreString = "";
+        else if (c == '*')
+            highScoreString = "Not A Valid Name";
         else if (highScoreString == null) {
             char cFinal = Character.toUpperCase(c);
             highScoreString = cFinal + "";
         }
-        else if (highScoreString.length() <= 8) {
+        else if (highScoreString.length() <= 10) {
             char cFinal = Character.toUpperCase(c);
             highScoreString += cFinal;
         }

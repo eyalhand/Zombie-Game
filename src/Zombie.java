@@ -19,7 +19,7 @@ public abstract class Zombie extends GameObject {
                 if (getBounds().intersects(tempObject.getBounds())) {
                     if (game.getCond() && game.getGameAmmo() == Game.Ammo.Blazer) {
                         //collision code
-                        health -= changeOfHealth + 8;
+                        health -= changeOfHealth + 6;
                         if (health <= 0) {
                             if (!game.isMute())
                                 AudioPlayer.getSound("zombie_death").play();

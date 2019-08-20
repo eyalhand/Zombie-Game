@@ -352,6 +352,11 @@ public class Game extends Canvas implements Runnable {
 
     public void setHighScoreLevel(int highScoreLevel) { this.highScoreLevel = highScoreLevel; }
 
+
+    public boolean isRunning() {
+        return isRunning;
+    }
+
     public static void main(String[]args) throws SlickException, IOException {
         new Game();
     }

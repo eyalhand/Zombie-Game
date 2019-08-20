@@ -225,7 +225,9 @@ public class KeyInput extends KeyAdapter {
         } else if (game.getGameState() == Game.STATE.GameOver) {
             if (key == KeyEvent.VK_ENTER) {
                 String newHighScore = menu.getHighScoreString();
-                if (newHighScore != null && newHighScore.length() > 0 && !enterOnce) {
+                if (newHighScore == null || newHighScore.equals("Not A Valid Name") || newHighScore.length() <= 0)
+                    menu.getChar('*');
+                else if (newHighScore != null && newHighScore.length() > 0 && !enterOnce) {
                     enterOnce = true;
                     highScore.addScore(newHighScore, HUD.zombiesKilled,game.getDIFF());
                     menu.changeRender(false);

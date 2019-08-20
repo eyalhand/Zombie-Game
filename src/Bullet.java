@@ -56,7 +56,7 @@ public abstract class Bullet extends GameObject {
             return new Rectangle((int) x, (int) y, 8, 8);
         }
         else {
-            return new Rectangle((int) x - 100, (int) y - 100, 200, 200);
+            return new Rectangle((int) x - 50, (int) y - 50, 100, 100);
         }
     }
 
