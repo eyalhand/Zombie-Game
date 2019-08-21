@@ -1,4 +1,3 @@
-import javafx.util.Pair;
 import java.awt.*;
 
 public abstract class Bullet extends GameObject {
