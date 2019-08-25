@@ -30,11 +30,11 @@ public class Shop extends MouseAdapter {
         B1Counter = 0;
         B2Counter = 0;
         B4Counter = 0;
-        B1 = 100;
-        B2 = 100;
-        B3 = 100;
-        B4 = 100;
-        B5 = 100;
+        B1 = 800;
+        B2 = 500;
+        B3 = 200;
+        B4 = 400;
+        B5 = 600;
     }
 
     public void mousePressed(MouseEvent e) {
@@ -43,21 +43,21 @@ public class Shop extends MouseAdapter {
 
         if (game.getGameState() == Game.STATE.Shop) {
             //item 1
-            if (mouseOver(mx, my, 385, 270, 780, 42) && game.getMode() != Game.Mode.MaxDamage) {
+            if (mouseOver(mx, my, 385, 270, 780, 42)) {
                 B1Counter++;
                 if (hud.getScore() >= B1 && B1Counter <= 6) {
                     hud.setScore(hud.getScore() - B1);
-                    //B1 += B1;
+                    B1 += B1;
                     hud.bounds += 30;
                     hud.Health = 100 + (hud.bounds / 2);
                 }
             }
             //item 2
-            if (mouseOver(mx, my, 385, 340, 780, 42) && game.getMode() != Game.Mode.MaxDamage) {
+            if (mouseOver(mx, my, 385, 340, 780, 42)) {
                 B2Counter++;
                 if (hud.getScore() >= B2 && B2Counter <= 6) {
                     hud.setScore(hud.getScore() - B2);
-                    //B2 += B2;
+                    B2 += B2;
                     if (game.getGameAmmo() == Game.Ammo.Pistol) {
                         game.setGameAmmo(Game.Ammo.Shotgun);
                         removeAmmo();
@@ -82,23 +82,23 @@ public class Shop extends MouseAdapter {
             if (mouseOver(mx, my, 385, 410, 780, 42)) {
                 if (hud.getScore() >= B3) {
                     hud.setScore(hud.getScore() - B3);
-                    //B3 += B3;
+                    B3 += B3;
                     hud.Health = 100 + (hud.bounds / 2);
                 }
             }
             //item 4
-            if (mouseOver(mx, my, 385, 480, 780, 42) && game.getMode() != Game.Mode.MaxDamage) {
+            if (mouseOver(mx, my, 385, 480, 780, 42)) {
                 B4Counter++;
                 if (hud.getScore() >= B4 && B4Counter <= 3) {
                     hud.setScore(hud.getScore() - B4);
-                    //B4 += B4;
+                    B4 += B4;
                     handler.setSpeed(handler.getSpeed() + 1);
                 }
             }
             if (mouseOver(mx, my, 385, 550, 780, 42)) {
                 if (hud.getScore() >= B5) {
                     hud.setScore(hud.getScore() - B5);
-                    //B5 += B5;
+                    B5 += B5;
                     Player.setAmmu(50);
                 }
             }
@@ -133,13 +133,13 @@ public class Shop extends MouseAdapter {
 
         //item 1
         g.setFont(font2);
-        if (check(1,g,B1Counter,5,385,300)) {
+        if (color(1,g,B1Counter,5,B1,385,300)) {
             g.drawString("Upgrade Health", 385, 300);
             g.drawString("Cost: " + B1 + "yal's", 800, 300);
         }
 
         //item 2
-        if (check(2,g,B2Counter,5,385,370)) {
+        if (color(2,g,B2Counter,5,B2,385,370)) {
             if (B2Counter == 5) {
                 g.drawString("Unlock Blazers", 385, 370);
             } else {
@@ -149,25 +149,25 @@ public class Shop extends MouseAdapter {
         }
 
         //item 3
-        if (color(3,g,B2Counter,0,385,440)) {
+        if (color(3,g,B2Counter,0,B3,385,440)) {
             g.drawString("Refill Health", 385, 440);
             g.drawString("Cost: " + B3 + "yal's", 800, 440);
         }
 
         //item 4
-        if (check(4,g,B4Counter,2,385,510)) {
+        if (color(4,g,B4Counter,2,B4,385,510)) {
             g.drawString("Upgrade Speed", 385, 510);
             g.drawString("Cost: " + B4 + "yal's", 800, 510);
         }
 
         //item 5
-        if (color(5,g,B2Counter,0,385,580)) {
+        if (color(5,g,B2Counter,0,B5,385,580)) {
             g.drawString("Buy 50 Bullets", 385, 580);
             g.drawString("Cost: " + B5 + "yal's", 800, 580);
         }
 
         g.setFont(new Font("Stencil",1,25));
-        g.setColor(Color.yellow);
+        g.setColor(Color.black);
         g.drawString("Score: " + hud.getScore() + "yal's", (int)game.getWIDTH()/2 - 100, 150);
         g.drawString("(Press Space To Resume Game)",(int)game.getWIDTH()/2 - 210,200);
     }
@@ -181,26 +181,16 @@ public class Shop extends MouseAdapter {
         handler.getLst().clear();
     }
 
-    private Boolean check(int B,Graphics g,int counter,int limit,int x, int y) {
-        if (game.getMode() != Game.Mode.MaxDamage)
-            return color(B,g,counter,limit,x,y);
-        else {
-            g.setColor(Color.black);
-            g.drawString("No More Upgrades", x, y);
-            return false;
-        }
-    }
-
-    private boolean color(int B,Graphics g,int counter,int limit,int x, int y) {
+    private boolean color(int B,Graphics g,int counter,int limit,int price,int x, int y) {
         if (B == 3 || B == 5) {
-            if (hud.getScore() >= B)
+            if (hud.getScore() >= price)
                 g.setColor(new Color(0,150,255));
             else
                 g.setColor(Color.black);
         }
         else {
-            if (counter <= limit && game.getMode() != Game.Mode.MaxDamage) {
-                if (hud.getScore() >= B) {
+            if (counter <= limit) {
+                if (hud.getScore() >= price) {
                     g.setColor(new Color(0,150,255));
                 }
                 else {

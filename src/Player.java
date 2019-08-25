@@ -83,21 +83,21 @@ public class Player extends GameObject {
         if (game.getGameAmmo() == Game.Ammo.Pistol) {
             if (getBounds().intersects(tempObject.getBounds())) {
                 //PistolAmmo code
-                ammo += 10;
+                ammo += 15;
                 handler.removeObject(tempObject);
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.Shotgun) {
             if (getBounds().intersects(tempObject.getBounds())) {
                 //ShotgunAmmo code
-                ammo += 7;
+                ammo += 6;
                 handler.removeObject(tempObject);
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.Uzi) {
             if (getBounds().intersects(tempObject.getBounds())) {
                 //UziAmmo code
-                ammo += 30;
+                ammo += 20;
                 handler.removeObject(tempObject);
             }
         }
@@ -111,7 +111,7 @@ public class Player extends GameObject {
         else if (game.getGameAmmo() == Game.Ammo.Negev) {
             if (getBounds().intersects(tempObject.getBounds())) {
                 //NegevAmmo code
-                ammo += 20;
+                ammo += 18;
                 handler.removeObject(tempObject);
             }
         }
@@ -126,7 +126,7 @@ public class Player extends GameObject {
             if (getBounds().intersects(tempObject.getBounds())) {
                 if (tempObject instanceof BlazersAmmo) {
                     //BlazersBullet code
-                    Blazers += 5;
+                    Blazers += 1;
                     handler.removeObject(tempObject);
                 }
                 else {

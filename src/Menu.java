@@ -411,10 +411,9 @@ public class Menu extends MouseAdapter {
         render2 = false;
 
         handler.getLst().clear();
-        if (game.getMode() != Game.Mode.MaxDamage) {
-            game.setGameAmmo(Game.Ammo.Pistol);
-            handler.setSpeed(5);
-        }
+
+        game.setGameAmmo(Game.Ammo.Pistol);
+        handler.setSpeed(5);
         game.setCond(false);
     }
 

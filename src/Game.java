@@ -56,8 +56,7 @@ public class Game extends Canvas implements Runnable {
     public enum SettingOption {
         PlayerColors,
         ZombieColors,
-        Backgrounds,
-        Mode
+        Backgrounds
     }
 
     public enum PlayerColor {
@@ -85,18 +84,12 @@ public class Game extends Canvas implements Runnable {
         Background4
     }
 
-    public enum Mode {
-        Regular,
-        MaxDamage
-    }
-
     private STATE gameState = STATE.Menu;
     private Ammo gameAmmo = Ammo.Pistol;
     private SettingOption settingOption = SettingOption.PlayerColors;
     private PlayerColor playerColor = PlayerColor.Blue;
     private ZombieColor zombieColor = ZombieColor.Green;
     private Background background = Background.Background1;
-    private Mode mode = Mode.Regular;
 
     private boolean cond = false;
     private boolean mute = false;
@@ -206,13 +199,6 @@ public class Game extends Canvas implements Runnable {
         //updates the game
         handler.tick();
         if (gameState == STATE.Game) {
-            if (mode == Mode.MaxDamage && !maxDamageOneTime) {
-                maxDamageOneTime = true;
-                gameAmmo = Ammo.Blazer;
-                hud.bounds = 250;
-                hud.Health = 100 + (hud.bounds / 2);
-                handler.setSpeed(8);
-            }
             spawner.tick();
             hud.tick();
             if (HUD.Health == 0) {
@@ -329,10 +315,6 @@ public class Game extends Canvas implements Runnable {
     public Background getBackgrounD() { return background; }
 
     public void setBackground(Background b) { background = b; }
-
-    public Mode getMode() { return mode; }
-
-    public void setMode(Mode m) { mode = m; }
 
     public void setSpawner(Spawn spawner) { this.spawner = spawner; }
 

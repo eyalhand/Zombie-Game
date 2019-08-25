@@ -82,10 +82,6 @@ public class Settings extends MouseAdapter {
         g.drawString("Game's Background:   " + game.getBackgrounD(), 200, 380);
         g.drawImage(triangle, 1060, 340,45,45,null);
         g.drawImage(triangle2, 140, 340,45,45,null);
-        color(g, Game.SettingOption.Mode);
-        g.drawString("Mode:   " + game.getMode(), 200, 460);
-        g.drawImage(triangle, 700, 420,45,45,null);
-        g.drawImage(triangle2, 140, 420,45,45,null);
 
         g.setColor(new Color(200,200,100));
         g.drawString("Back",40,55);

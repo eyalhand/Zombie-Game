@@ -7,7 +7,6 @@ public class Spawn {
     private Game game;
 
     private Random r = new Random();
-    private int numberOfZombies = 0;
     private static int time,x,lastTime;
 
     private float[] startPositionsX = new float[6];
@@ -98,37 +97,37 @@ public class Spawn {
     private void spawnAmmo() {
         int spawnBulletCollector;
         if (game.getGameAmmo() == Game.Ammo.Pistol) {
-            spawnBulletCollector = r.nextInt(230);
+            spawnBulletCollector = r.nextInt(150);
             if (spawnBulletCollector == 0) {
                 handler.addObject(new PistolAmmo(r.nextInt((int)game.getWIDTH() - 60), r.nextInt((int)game.getHEIGHT() - 60), ID.Ammo, handler));
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.Shotgun) {
-            spawnBulletCollector = r.nextInt(300);
+            spawnBulletCollector = r.nextInt(200);
             if (spawnBulletCollector == 0) {
                 handler.addObject(new ShotgunAmmo(r.nextInt((int)game.getWIDTH() - 60), r.nextInt((int)game.getHEIGHT() - 60), ID.Ammo, handler));
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.Uzi) {
-            spawnBulletCollector = r.nextInt(250);
+            spawnBulletCollector = r.nextInt(200);
             if (spawnBulletCollector == 0) {
                 handler.addObject(new UziAmmo(r.nextInt((int)game.getWIDTH() - 60), r.nextInt((int)game.getHEIGHT() - 60), ID.Ammo, handler));
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.AK47) {
-            spawnBulletCollector = r.nextInt(300);
+            spawnBulletCollector = r.nextInt(225);
             if (spawnBulletCollector == 0) {
                 handler.addObject(new AK47Ammo(r.nextInt((int)game.getWIDTH() - 60), r.nextInt((int)game.getHEIGHT() - 60), ID.Ammo, handler));
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.Negev) {
-            spawnBulletCollector = r.nextInt(300);
+            spawnBulletCollector = r.nextInt(235);
             if (spawnBulletCollector == 0) {
                 handler.addObject(new NegevAmmo(r.nextInt((int)game.getWIDTH() - 60), r.nextInt((int)game.getHEIGHT() - 60), ID.Ammo, handler));
             }
         }
         else if (game.getGameAmmo() == Game.Ammo.AWP) {
-            spawnBulletCollector = r.nextInt(320);
+            spawnBulletCollector = r.nextInt(250);
             if (spawnBulletCollector == 0) {
                 handler.addObject(new AWPAmmo(r.nextInt((int)game.getWIDTH() - 60), r.nextInt((int)game.getHEIGHT() - 60), ID.Ammo, handler));
             }

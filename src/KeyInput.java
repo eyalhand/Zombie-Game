@@ -44,13 +44,11 @@ public class KeyInput extends KeyAdapter {
                 }
             } else if (game.getGameState() == Game.STATE.Settings) {
                 if (game.getSettingOption() == Game.SettingOption.PlayerColors)
-                    game.setSettingOption(Game.SettingOption.Mode);
+                    game.setSettingOption(Game.SettingOption.Backgrounds);
                 else if (game.getSettingOption() == Game.SettingOption.ZombieColors)
                     game.setSettingOption(Game.SettingOption.PlayerColors);
                 else if (game.getSettingOption() == Game.SettingOption.Backgrounds)
                     game.setSettingOption(Game.SettingOption.ZombieColors);
-                else
-                    game.setSettingOption(Game.SettingOption.Backgrounds);
             } else if (game.getGameState() == Game.STATE.GameOver) {
                 menu.getChar('W');
             }
@@ -68,8 +66,6 @@ public class KeyInput extends KeyAdapter {
                     game.setSettingOption(Game.SettingOption.ZombieColors);
                 else if (game.getSettingOption() == Game.SettingOption.ZombieColors)
                     game.setSettingOption(Game.SettingOption.Backgrounds);
-                else if (game.getSettingOption() == Game.SettingOption.Backgrounds)
-                    game.setSettingOption(Game.SettingOption.Mode);
                 else
                     game.setSettingOption(Game.SettingOption.PlayerColors);
             } else if (game.getGameState() == Game.STATE.GameOver) {
@@ -120,12 +116,6 @@ public class KeyInput extends KeyAdapter {
                         game.setBackground(Game.Background.Background4);
                     else
                         game.setBackground(Game.Background.Background1);
-                } else {
-                    if (game.getMode() == Game.Mode.Regular)
-                        game.setMode(Game.Mode.MaxDamage);
-                    else {
-                        game.setMode(Game.Mode.Regular);
-                    }
                 }
             } else if (game.getGameState() == Game.STATE.GameOver) {
                 menu.getChar('D');
@@ -175,11 +165,6 @@ public class KeyInput extends KeyAdapter {
                         game.setBackground(Game.Background.Background2);
                     else
                         game.setBackground(Game.Background.Background3);
-                } else {
-                    if (game.getMode() == Game.Mode.MaxDamage)
-                        game.setMode(Game.Mode.Regular);
-                    else
-                        game.setMode(Game.Mode.MaxDamage);
                 }
             } else if (game.getGameState() == Game.STATE.GameOver) {
                 menu.getChar('A');
